@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https:gordiichuk.com/sitemap.xml
