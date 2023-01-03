@@ -33,11 +33,13 @@
 	<meta name="twitter:description" content="Проект ALEX включає в себе карту відключеть світла, пункти незламності, пункти укриття в м.Рівне">
 	<meta name="twitter:image" content="https://gordiichuk.com/img/9852.jpg">
 	<title>💡Карта відключень світла в м.Рівне | ALEX</title>
+	<script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+
 </head>
 <body>
 	<!-- searchBox -->
 	<form class="search-form" action="">
-		<input id="pac-input" id="search" name="search" class="controls search-input" type="text" placeholder="Введіть адресу" />
+		<input id="pac-input" name="search" class="controls search-input" type="text" placeholder="Введіть адресу" />
 		<input type="reset" value="" class="reset-search-input">
 		<img src="img/x-square.svg" alt="clear" class="search-form__cancel-img">
 	</form>
@@ -2673,10 +2675,7 @@
 	</div>
 
 	<button id="geolocation" class="geolocation">
-		<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000000" class="bi bi-geo-alt" viewBox="0 0 16 16">
-			<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-			<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-		</svg>
+		<img style="fill: #000; width: 25px; height: 25px;" src="img/geo-alt.svg" alt="geo">
 	</button>
 
 	<div itemscope itemtype="https://schema.org/CreativeWork" class="info info__map-light">
@@ -2693,8 +2692,8 @@
 	
 	<div class="about-alerts-map">
 		<img src="img/x-circle.svg" alt="close" class="about-alerts-map__close">
-		<div class="about-alerts-map__line"><img class="about-alerts-map__image" src="img/vault_bombs.svg" alt="bomb"><p class="about-alerts-map__paragraf"> - Бомбосховища</p></div>
-		<div class="about-alerts-map__line"><img class="about-alerts-map__image" src="img/vault_nuclear.svg" alt="nuclear"><p class="about-alerts-map__paragraf"> - Протирадіаційні укриття</p></div>
+		<div class="about-alerts-map__line"><img class="about-alerts-map__image" src="img/rocket-takeoff.svg" alt="bomb"><p class="about-alerts-map__paragraf"> - Бомбосховища</p></div>
+		<div class="about-alerts-map__line"><img class="about-alerts-map__image" src="img/radioactive.svg" alt="nuclear"><p class="about-alerts-map__paragraf"> - Протирадіаційні укриття</p></div>
 	</div>
 
 	<div class="map-light-hint">
