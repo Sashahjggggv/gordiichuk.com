@@ -85,6 +85,10 @@ function initMap() {
   });
 
 	// END SEARCH BOX
+	// let searchInput = getElementById('pac-input')
+	// if (searchInput.length == 0) {
+	// 	createele
+	// }
 	
 	let zones = [];
 
