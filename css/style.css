@@ -137,7 +137,6 @@ svg.btn-icon {
           user-select: none;
   padding: 15px 20px 15px 140px;
   z-index: 10;
-  background: rgba(47, 47, 162, 0.9);
   background: #333;
   border-radius: 15px;
   transition: all 0.5s ease;
@@ -148,24 +147,6 @@ svg.btn-icon {
 }
 .header.dark-mode {
   background: rgba(11, 12, 16, 0.9);
-}
-.header__update-time {
-  position: absolute;
-  left: 0;
-  color: #fff;
-  z-index: 10;
-  height: 25px;
-  bottom: -25px;
-  padding: 5px;
-  background: rgba(47, 47, 162, 0.9);
-  border-radius: 10px;
-  transition: all 0.5s ease;
-}
-.header__update-time.dark-mode {
-  background: rgba(11, 12, 16, 0.9);
-}
-.header__update-time.none {
-  display: none;
 }
 .header__btns {
   display: flex;
@@ -192,130 +173,10 @@ svg.btn-icon {
   transform: translate(-50%, -50%);
   box-shadow: 0px 0px 20px 12px #fff;
 }
-.header__block-alarm-anable {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.2s ease;
-  display: none;
-}
-.header__block-alarm-anable:hover {
-  transform: translateY(-2px);
-}
-.header__alert-text {
-  font-weight: 600;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #f64c72;
-}
-.header__alert-icon {
-  margin-left: 10px;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  z-index: 1;
-}
 @media (min-width: 767px) {
   .header__btn-search {
     display: none;
   }
-}
-.header__map-icon {
-  display: none;
-}
-.header__map-icon.active {
-  display: flex;
-}
-.header__sattelite {
-  display: flex;
-}
-.header__sattelite.active {
-  display: none;
-}
-.header__shadow-alert {
-  position: absolute;
-  box-shadow: 0 0 7px 7px red;
-  -webkit-animation-name: alert;
-          animation-name: alert;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  position: relative;
-}
-.header__block-alarm-disable {
-  display: flex;
-  align-items: center;
-  transition: all 0.2s ease;
-}
-.header__block-alarm-disable:hover {
-  transform: translateY(-2px);
-}
-.header__alarm-disable-text {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-align: center;
-  text-transform: capitalize;
-  font-weight: 600;
-  color: green;
-}
-.header__alarm-disable-icon {
-  margin-left: 10px;
-  fill: green;
-  width: 30px;
-  height: 30px;
-}
-.header__block-more {
-  display: none;
-  border-radius: 10px;
-  padding: 10px 0;
-  width: 200px;
-  transition: all 0.5s ease;
-  background: rgba(47, 47, 162, 0.9);
-  position: absolute;
-  top: 70px;
-  right: 0;
-  border: 1px solid #ffb800;
-}
-.header__block-more.active {
-  display: block;
-}
-.header__block-more.dark-mode {
-  background: rgba(11, 12, 16, 0.9);
-}
-.header__block-more ul {
-  width: 90%;
-  margin: 0 0 0 50%;
-  transform: translateX(-50%);
-}
-.header__block-more a {
-  color: #fff;
-  padding: 10px 0 10px 27px;
-  width: 100%;
-  position: relative;
-  margin-bottom: 6px;
-  align-items: center;
-  cursor: pointer;
-}
-.header__block-more a svg {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.header__block-more a::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 100%;
-  border-bottom: 1px solid #ffb800;
 }
 .header__block-more a:last-child::after {
   display: none;
@@ -332,8 +193,20 @@ svg.btn-icon {
 .header__map-light.lightActive {
   display: none;
 }
+.header__map-icon {
+  display: none;
+}
+.header__map-icon.active {
+  display: flex;
+}
+.header__sattelite {
+  display: flex;
+}
+.header__sattelite.active {
+  display: none;
+}
 .header__punkty-nezlamnosty {
-  display: flwx;
+  display: flex;
 }
 .header__punkty-nezlamnosty.punktsActive {
   display: none;
@@ -366,18 +239,6 @@ svg.btn-icon {
     padding: 15px 13px 15px 90px;
     transform: translateX(-50%);
   }
-  .header__block-more {
-    top: 50px;
-  }
-  .header__alert-text {
-    display: none;
-  }
-  .header__alert-icon {
-    margin: 0 0 5px 0;
-  }
-  .header__shadow-light {
-    box-shadow: 0px 0px 13px 8px #fff;
-  }
   .header__logo {
     height: 25px;
   }
@@ -385,41 +246,6 @@ svg.btn-icon {
 @media (max-width: 500px) {
   .header__btns > * {
     margin-left: 15px;
-  }
-  .header__alarm-disable-icon {
-    margin-left: 0px !important;
-  }
-}
-@media (max-width: 390px) {
-  .header__alarm-disable-text {
-    display: none;
-  }
-}
-
-.alerts-map {
-  position: absolute;
-  top: 90px;
-  left: 10px;
-  z-index: 2;
-  width: 500px;
-  border-radius: 10px;
-  transition: all 0.5s ease;
-  background: rgba(47, 47, 162, 0.9);
-  display: none;
-}
-.alerts-map.dark-mode {
-  background: rgba(11, 12, 16, 0.9);
-}
-.alerts-map.active {
-  display: block !important;
-}
-@media (max-width: 767px) {
-  .alerts-map {
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 98%;
-    min-width: 0;
   }
 }
 
@@ -436,68 +262,9 @@ svg.btn-icon {
 .hide.active {
   display: block;
 }
-
-@-webkit-keyframes alert {
-  0% {
-    top: -3px;
-    right: 15px;
-  }
-  25% {
-    top: -3px;
-    right: 4px;
-  }
-  50% {
-    top: -15px;
-    right: 15px;
-  }
-  75% {
-    top: -3px;
-    right: 25px;
-  }
-  100% {
-    top: -3px;
-    right: 15px;
-  }
-}
-
-@keyframes alert {
-  0% {
-    top: -3px;
-    right: 15px;
-  }
-  25% {
-    top: -3px;
-    right: 4px;
-  }
-  50% {
-    top: -15px;
-    right: 15px;
-  }
-  75% {
-    top: -3px;
-    right: 25px;
-  }
-  100% {
-    top: -3px;
-    right: 15px;
-  }
-}
-/**
- * @license
- * Copyright 2019 Google LLC. All Rights Reserved.
- * SPDX-License-Identifier: Apache-2.0
- */
-/* 
- * Always set the map height explicitly to define the size of the div element
- * that contains the map. 
- */
 #map {
   height: 100%;
 }
-
-/* 
- * Optional: Makes the sample page fill the window. 
- */
 html,
 body {
   height: 100%;
@@ -546,12 +313,6 @@ body {
   padding: 5px 11px;
 }
 
-.pac-controls label {
-  font-family: Roboto;
-  font-size: 13px;
-  font-weight: 300;
-}
-
 #pac-input {
   position: fixed;
   top: 10px;
@@ -561,7 +322,6 @@ body {
   z-index: 3;
   border-radius: 15px;
   transition: all 0.5s ease;
-  background: rgba(47, 47, 162, 0.9);
   background: #333;
   color: #fff;
   font-family: 'Ubuntu', sans-serif;
@@ -946,7 +706,6 @@ body {
 .page-info__block-info {
   padding: 5px 20px;
   margin-bottom: 25px;
-  background: #7393B3;
   background: #708090;
   border-radius: 10px;
   overflow: hidden;
@@ -1056,7 +815,6 @@ body {
   padding: 10px;
   border-radius: 20px;
   display: flex;
-  background: rgba(47, 47, 162, 0.9);
   background: #333;
   transition: all 0.5s ease;
 }
@@ -1088,7 +846,6 @@ body {
   width: 70%;
   padding: 20px;
   display: none;
-  background: rgba(47, 47, 162, 0.9);
   border-radius: 10px;
   transition: all 0.5s ease;
 }
@@ -1193,7 +950,7 @@ body {
   border-radius: 50%;
 }
 
-.gmnoprint > div {
+.gmnoprint div {
   background: none !important;
   box-shadow: none !important;
 }
