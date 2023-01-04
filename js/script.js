@@ -3594,7 +3594,7 @@ function initMap() {
 	let location = new google.maps.Marker({
 		icon: "img/geo-alt.svg",
 		map,
-    title: "Current location",
+    title: "Ваша геолокація",
   });
 	const infoWindow2 = new google.maps.InfoWindow({
     content: "",
