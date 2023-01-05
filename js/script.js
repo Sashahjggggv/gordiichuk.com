@@ -22,10 +22,10 @@ function initMap() {
 	});
 
 	const defaultBounds = {
-		north: center.lat + 0.5,
-		south: center.lat - 0.5,
-		east: center.lng + 0.5,
-		west: center.lng - 0.5,
+		north: center.lat + 0.25,
+		south: center.lat - 0.25,
+		east: center.lng + 0.25,
+		west: center.lng - 0.25,
 	};
 	const input = document.getElementById("pac-input");
 	const options = {
