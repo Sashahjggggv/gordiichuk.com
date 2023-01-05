@@ -40,7 +40,9 @@
 	<form class="search-form" action="">
 		<input id="pac-input" name="search" class="controls search-input" type="text" placeholder="Введіть адресу" />
 		<input type="reset" value="" class="reset-search-input">
-		<img src="img/x-circle.svg" alt="clear" class="search-form__cancel-img">
+		<div class="search-form__close"></div>
+		<img src="img/x-circle.svg" alt="clear" class="search-form__cancel-img search-form__cancel-img_clear none">
+		<img src="img/arrow-up-circle.svg" alt="hide" class="search-form__cancel-img search-form__cancel-img_hide">
 	</form>
 
 	<!-- header -->
@@ -49,7 +51,7 @@
 		<img src="img/logo.svg" style="max-height: 100px;" alt="ALEX" class="header__logo">
 		<img itemprop="image" alt="обгортка" class="header__image" src="img/9852.jpg" />
 		<div class="header__btns">
-			<label for="search" class="header__btn-search hover-btn">
+			<label for="pac-input" class="header__btn-search hover-btn">
 				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" class="bi bi-search btn-icon" viewBox="0 0 16 16">
 					<title>Пошук</title>
 					<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -2683,7 +2685,7 @@
 		<h2 class="info__update-time">Інформація оновлена 01.01, о 18:00</h2>
 		<h2 class="info__time-info">Графіки станом на 01.01 - 02.01</h2>
 	</div>
-	
+
 	<div class="info info__map-punkts none">
 		<h2 class="info__title">Пункти незламності в м.Рівне</h2>
 	</div>
@@ -2776,7 +2778,21 @@
 				return false;
 			}
 		});
+		const isEmpty = str => !str.trim().length;
+		document.getElementById("pac-input").addEventListener("input", function() {
+			if( isEmpty(this.value) ) {
+				$('.search-form__close,.search-form__cancel-img_hide').removeClass('none');
+				$('.search-form__cancel-img_clear').addClass('none');
+			} else {
+				$('.search-form__close,.search-form__cancel-img_hide').addClass('none');
+				$('.search-form__cancel-img_clear').removeClass('none');
+			}
+		});
 		$(document).ready(function() {
+			$('.reset-search-input').click(function(event){
+				$('.search-form__close,.search-form__cancel-img_hide').removeClass('none');
+				$('.search-form__cancel-img_clear').addClass('none');
+			});
 			$('.logo,.block-about-me__close').click(function(event){
 				$('.block-about-me').toggleClass('active');
 				$('.page-about-map').removeClass('active');
@@ -2824,8 +2840,12 @@
 			});
 			$('.header__btn-search').click(function(event){
 				$('.page-about-map,.block-about-me,.time-block').removeClass('active');
-				$('.search-input,.search-form').toggleClass('active');
-				$('.header__update-time').addClass('none');
+				$('.search-input,.search-form').addClass('active');
+				$('.header__update-time,.header__btn-search').addClass('none');
+			});
+			$('.search-form__close').click(function(event){
+				$('.search-input,.search-form').removeClass('active');
+				$('.header__btn-search').removeClass('none');
 			});
 			$('.header__btn-dark-light').click(function(event){
 				$('.dark-icon,.light-icon').toggleClass('active');
