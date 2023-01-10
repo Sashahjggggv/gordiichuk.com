@@ -3168,10 +3168,8 @@ function initMap() {
 					{ lat: 50.62679405098953, lng: 26.26106467679803 },
 					{ lat: 50.62612429847745, lng: 26.260131062175123 },
 					{ lat: 50.62575343969024, lng: 26.26040154865131 },
-					
 					{ lat: 50.62603632578035, lng: 26.261741194940186 },
 					{ lat: 50.62635716645097, lng: 26.263929366552148 },
-					
 					{ lat: 50.62709740545044, lng: 26.265420857205424 },
 					{ lat: 50.627428157464365, lng: 26.266535835124568 },
 					{ lat: 50.626339211306345, lng: 26.266808563543552 },
@@ -3186,6 +3184,7 @@ function initMap() {
 			'#008000'
 		],
 	];
+
 	areas.forEach(function(element) {
 		zones.push(
 			new google.maps.Polygon({
@@ -3213,16 +3212,27 @@ function initMap() {
 			});
 		});
 	});
-
 	$('.time-block__hide').on("click", () => {
 		zones.forEach(function(element){
 			element.setOptions({fillColor: "#008000"});
 			element.setOptions({strokeColor: "#008000"});
 		});
 	});
+
+	areas.forEach(function(element){
+		const currentDate = new Date();
+		const hours = currentDate.getHours();
+		if (hours <= 23 ) {
+			console.log('Зараз 22 година');
+			// element[0].setOptions({fillColor: "red"});
+			$('.time-block__block-image_1').addClass('active');
+		} else {
+			console.log('Зараз 0 година');
+			$('.time-block__block-image_1').removeClass('active');
+		}
+	});
 	
 	// Пункти незламності
-
 	const positions = [
 		{ lat: 50.64264244334985, lng: 26.194509184681348 },
 		{ lat: 50.62272157243296, lng: 26.24498472886133 },
