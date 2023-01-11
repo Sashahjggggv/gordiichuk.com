@@ -3248,7 +3248,7 @@ function initMap() {
 			})
 		);
 	});
-
+	
 	funktionSetColors = function(element){
 		const currentDate = new Date();
 		const hours = currentDate.getHours();
@@ -3424,8 +3424,10 @@ function initMap() {
 			console.log('Current time detection error');
 		}
 	}
-
-	// areas.forEach(funktionSetColors);
+	functionBgColor = function(element, index){
+		element.setOptions({fillColor: '#008000', strokeColor: '#008000',});
+	}
+	areas.forEach(funktionSetColors);
 	
 	zones.forEach(function(element, index){
 		element.setMap(map);
@@ -3434,14 +3436,13 @@ function initMap() {
 			$('.header__update-time').addClass('none');
 			$('.time-block').removeClass('active hide');
 			$('.time-block_' + index).toggleClass('active');
-				// zones.forEach(funktionSetColors);
+			zones.forEach(functionBgColor);
+			zones.forEach(funktionSetColors);
 			element.setOptions({fillColor: "rgb(47,47,162)", strokeColor: "rgb(47,47,162)"});
 		});
 	});
 	$('.time-block__hide').on("click", () => {
-		zones.forEach(function(element, index){
-			element.setOptions({fillColor: '#008000', strokeColor: '#008000',});
-		});
+		zones.forEach(functionBgColor);
 		areas.forEach(funktionSetColors);
 	});
 
