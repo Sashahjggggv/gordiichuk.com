@@ -3247,20 +3247,9 @@ function initMap() {
 				fillOpacity: 0.4,
 			})
 		);
-		zones.forEach(function(element, index){
-			element.setMap(map);
-			element.addListener("click", () => {
-				$('.map-light-hint').addClass('none');
-				$('.header__update-time').addClass('none');
-				$('.time-block').removeClass('active hide');
-				$('.time-block_' + index).toggleClass('active');
-				element.setOptions({fillColor: "rgb(47,47,162)"});
-				element.setOptions({strokeColor: "rgb(47,47,162)"});
-			});
-		});
 	});
 
-	areas.forEach(modificateColor = function(element){
+	funktionSetColors = function(element){
 		const currentDate = new Date();
 		const hours = currentDate.getHours();
 		if ( hours >= 23 || hours >= 0 && hours < 3 ) {
@@ -3434,187 +3423,26 @@ function initMap() {
 		} else {
 			console.log('Current time detection error');
 		}
+	}
+
+	// areas.forEach(funktionSetColors);
+	
+	zones.forEach(function(element, index){
+		element.setMap(map);
+		element.addListener("click", () => {
+			$('.map-light-hint').addClass('none');
+			$('.header__update-time').addClass('none');
+			$('.time-block').removeClass('active hide');
+			$('.time-block_' + index).toggleClass('active');
+				// zones.forEach(funktionSetColors);
+			element.setOptions({fillColor: "rgb(47,47,162)", strokeColor: "rgb(47,47,162)"});
+		});
 	});
 	$('.time-block__hide').on("click", () => {
 		zones.forEach(function(element, index){
 			element.setOptions({fillColor: '#008000', strokeColor: '#008000',});
 		});
-
-		areas.forEach(funktionSetColors = function(element){
-			const currentDate = new Date();
-			const hours = currentDate.getHours();
-			if ( hours >= 23 || hours >= 0 && hours < 3 ) {
-				zones[0].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[2].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[4].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[5].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[8].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[11].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[12].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[15].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[19].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[22].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[28].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[32].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[33].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[39].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[42].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[51].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[52].setOptions({fillColor: "red", strokeColor: "red"});
-			} else if ( hours >= 3 && hours < 7) {
-				zones[1].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[6].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[7].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[9].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[13].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[14].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[17].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[18].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[23].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[24].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[25].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[27].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[29].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[30].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[34].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[36].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[37].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[40].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[41].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[43].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[46].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[47].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[48].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[49].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[50].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[53].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[54].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[55].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[56].setOptions({fillColor: "red", strokeColor: "red"});
-			} else if ( hours >= 7 && hours < 11 ) {
-				zones[0].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[2].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[3].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[4].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[5].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[8].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[10].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[11].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[12].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[16].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[19].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[20].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[22].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[28].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[32].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[33].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[36].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[38].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[39].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[42].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[44].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[45].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[51].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[52].setOptions({fillColor: "red", strokeColor: "red"});
-			} else if ( hours >= 11 && hours < 15) {
-				zones[1].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[6].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[7].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[9].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[13].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[14].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[17].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[18].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[21].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[23].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[24].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[25].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[27].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[29].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[30].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[31].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[34].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[35].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[36].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[37].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[40].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[41].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[43].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[46].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[47].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[48].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[49].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[50].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[53].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[54].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[55].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[56].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[57].setOptions({fillColor: "red", strokeColor: "red"});
-			} else if ( hours >= 15 && hours < 19 ) {
-				zones[0].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[2].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[3].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[4].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[5].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[8].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[10].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[11].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[12].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[15].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[16].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[19].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[20].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[22].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[26].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[28].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[32].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[33].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[36].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[38].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[39].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[42].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[44].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[45].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[51].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[52].setOptions({fillColor: "red", strokeColor: "red"});
-			} else if ( hours >= 19 && hours < 23 ) {
-				zones[1].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[6].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[7].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[9].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[13].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[14].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[17].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[18].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[21].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[23].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[24].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[25].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[27].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[29].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[30].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[31].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[34].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[35].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[36].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[37].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[40].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[41].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[43].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[46].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[47].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[48].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[49].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[50].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[53].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[54].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[55].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[56].setOptions({fillColor: "red", strokeColor: "red"});
-				zones[57].setOptions({fillColor: "red", strokeColor: "red"});
-			} else {
-				console.log('Current time detection error');
-			}
-		});
+		areas.forEach(funktionSetColors);
 	});
 
 	// Лампочка №1
