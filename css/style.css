@@ -429,7 +429,14 @@ body {
   background: rgba(47, 47, 162, 0.9);
   background: #333;
 }
-.time-block__blo
+.time-block__block-image > img:first-child,
+.time-block__block-image.none > img:last-child {
+  display: inline-flex;
+}
+.time-block__block-image.none > img:first-child,
+.time-block__block-image > img:last-child {
+  display: none;
+}
 .time-block.dark-mode {
   background: rgba(11, 12, 16, 0.9);
 }
