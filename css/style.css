@@ -849,6 +849,7 @@ body {
 .map-light-hint__close {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .map-light-hint__paragraf {
   color: #fff;
