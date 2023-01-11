@@ -3459,7 +3459,7 @@ function initMap() {
 		'.time-block__first-lamp_39,'+ 
 		'.time-block__first-lamp_42,'+ 
 		'.time-block__first-lamp_51,'+ 
-		'.time-block__first-lamp_52').addClass('none');
+		'.time-block__first-lamp_52').addClass('off');
 	// Лампочка №2
 	$('.time-block__second-lamp_1,'+
 	'.time-block__second-lamp_6,'+
@@ -3489,7 +3489,7 @@ function initMap() {
 	'.time-block__second-lamp_53,'+
 	'.time-block__second-lamp_54,'+
 	'.time-block__second-lamp_55,'+
-	'.time-block__second-lamp_56').addClass('none');
+	'.time-block__second-lamp_56').addClass('off');
 	// Лампочка №3
 	$('.time-block__third-lamp_0,'+
 	'.time-block__third-lamp_2,'+
@@ -3514,7 +3514,7 @@ function initMap() {
 	'.time-block__third-lamp_44,'+
 	'.time-block__third-lamp_45,'+
 	'.time-block__third-lamp_51,'+
-	'.time-block__third-lamp_52').addClass('none');
+	'.time-block__third-lamp_52').addClass('off');
 	// Лампочка №4
 	$('.time-block__fourth-lamp_1,'+
 	'.time-block__fourth-lamp_6,'+
@@ -3548,7 +3548,7 @@ function initMap() {
 	'.time-block__fourth-lamp_54,'+
 	'.time-block__fourth-lamp_55,'+
 	'.time-block__fourth-lamp_56,'+
-	'.time-block__fourth-lamp_57').addClass('none');
+	'.time-block__fourth-lamp_57').addClass('off');
 	// Лампочка №5
 	$('.time-block__fifth-lamp_0,'+
 	'.time-block__fifth-lamp_2,'+
@@ -3575,7 +3575,7 @@ function initMap() {
 	'.time-block__fifth-lamp_44,'+
 	'.time-block__fifth-lamp_45,'+
 	'.time-block__fifth-lamp_51,'+
-	'.time-block__fifth-lamp_52').addClass('none');
+	'.time-block__fifth-lamp_52').addClass('off');
 	// Лампочка №6
 	$('.time-block__last-lamp_1,'+
 	'.time-block__last-lamp_6,'+
@@ -3609,7 +3609,7 @@ function initMap() {
 	'.time-block__last-lamp_54,'+
 	'.time-block__last-lamp_55,'+
 	'.time-block__last-lamp_56,'+
-	'.time-block__last-lamp_57').addClass('none');
+	'.time-block__last-lamp_57').addClass('off');
 
 	// Пункти незламності
 	const positions = [

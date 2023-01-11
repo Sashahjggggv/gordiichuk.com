@@ -430,10 +430,10 @@ body {
   background: #333;
 }
 .time-block__block-image > img:first-child,
-.time-block__block-image.none > img:last-child {
+.time-block__block-image.off > img:last-child {
   display: inline-flex;
 }
-.time-block__block-image.none > img:first-child,
+.time-block__block-image.off > img:first-child,
 .time-block__block-image > img:last-child {
   display: none;
 }
