@@ -3323,8 +3323,6 @@ function initMap() {
 			zones[40].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[41].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[43].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[46].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[47].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[48].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[50].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[53].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3383,8 +3381,6 @@ function initMap() {
 			zones[40].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[41].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[43].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[46].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[47].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[48].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[50].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[53].setOptions({fillColor: "red", strokeColor: "red"});
