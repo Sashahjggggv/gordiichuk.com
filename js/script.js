@@ -64,6 +64,19 @@ function initMap() {
 
 	// END AUTOCOMPLETE
 
+	// https://gordiichuk.com/?showBlock=info
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+
+	const showBlock = urlParams.get('showBlock')
+	if (showBlock == 'info') {
+		$('.block-about-me,.header__block-more,.search-input,.search-form').removeClass('active');
+		$('.header__update-time').addClass('none');
+		$('.page-info').toggleClass('active');
+	} else {
+		console.log('Error show block-info')
+	}
+
 	let zones = [];
 
 	let areas = [
@@ -495,7 +508,7 @@ function initMap() {
 					{ lat: 50.60975204544671, lng: 26.28081166788837 },
 				],
 			],
-			'008000'
+			'#008000'
 		],
 		// Блок №9+6 обєднано
 		[
@@ -1557,7 +1570,7 @@ function initMap() {
 					{ lat: 50.62554106848554, lng: 26.203856174411523 },
 				],
 			],
-			'#000000'
+			'#008000'
 		],
 		// Блок №29
 		[
@@ -4343,10 +4356,7 @@ function initMap() {
 	
 
 	// Links maps
-	const queryString = window.location.search;
-	const urlParams = new URLSearchParams(queryString);
 	const mapType = urlParams.get('maps')
-	// console.log(mapType);
 	if (mapType == 'shelters') {
 		console.log('Shelters');
 		hidePunkts();
