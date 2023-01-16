@@ -3267,7 +3267,6 @@ function initMap() {
 		const hours = currentDate.getHours();
 		if ( hours >= 23 || hours >= 0 && hours < 3 ) {
 			zones[1].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[6].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[7].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[9].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[13].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3296,6 +3295,7 @@ function initMap() {
 			zones[2].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[4].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[5].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[6].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[8].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[11].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[12].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3315,7 +3315,6 @@ function initMap() {
 			zones[52].setOptions({fillColor: "red", strokeColor: "red"});
 		} else if ( hours >= 7 && hours < 11 ) {
 			zones[1].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[6].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[7].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[9].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[13].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3349,6 +3348,7 @@ function initMap() {
 			zones[3].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[4].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[5].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[6].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[8].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[10].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[11].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3373,7 +3373,6 @@ function initMap() {
 			zones[52].setOptions({fillColor: "red", strokeColor: "red"});
 		} else if ( hours >= 15 && hours < 19 ) {
 			zones[1].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[6].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[7].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[9].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[13].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3407,6 +3406,7 @@ function initMap() {
 			zones[3].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[4].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[5].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[6].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[8].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[10].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[11].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3459,7 +3459,6 @@ function initMap() {
 
 	// Лампочка №1
 	$('.time-block__first-lamp_1,'+ 
-		'.time-block__first-lamp_6,'+ 
 		'.time-block__first-lamp_7,'+ 
 		'.time-block__first-lamp_9,'+ 
 		'.time-block__first-lamp_13,'+ 
@@ -3488,6 +3487,7 @@ function initMap() {
 	'.time-block__second-lamp_2,'+
 	'.time-block__second-lamp_4,'+
 	'.time-block__second-lamp_5,'+
+	'.time-block__second-lamp_6,'+
 	'.time-block__second-lamp_8,'+ 
 	'.time-block__second-lamp_11,'+
 	'.time-block__second-lamp_12,'+
@@ -3507,7 +3507,6 @@ function initMap() {
 	'.time-block__second-lamp_52').addClass('off');
 	// Лампочка №3
 	$('.time-block__third-lamp_1,'+
-	'.time-block__third-lamp_6,'+
 	'.time-block__third-lamp_7,'+
 	'.time-block__third-lamp_9,'+
 	'.time-block__third-lamp_13,'+
@@ -3544,6 +3543,7 @@ function initMap() {
 	'.time-block__fourth-lamp_3,'+
 	'.time-block__fourth-lamp_4,'+
 	'.time-block__fourth-lamp_5,'+
+	'.time-block__fourth-lamp_6,'+
 	'.time-block__fourth-lamp_8,'+
 	'.time-block__fourth-lamp_10,'+
 	'.time-block__fourth-lamp_11,'+
@@ -3569,7 +3569,6 @@ function initMap() {
 	// Лампочка №5
 	$(
 	'.time-block__fifth-lamp_1,'+
-	'.time-block__fifth-lamp_6,'+
 	'.time-block__fifth-lamp_7,'+
 	'.time-block__fifth-lamp_9,'+
 	'.time-block__fifth-lamp_13,'+
@@ -3606,6 +3605,7 @@ function initMap() {
 	'.time-block__last-lamp_3,'+
 	'.time-block__last-lamp_4,'+
 	'.time-block__last-lamp_5,'+
+	'.time-block__last-lamp_6,'+
 	'.time-block__last-lamp_8,'+
 	'.time-block__last-lamp_10,'+
 	'.time-block__last-lamp_11,'+
