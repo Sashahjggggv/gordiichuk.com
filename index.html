@@ -9,7 +9,7 @@
 		gtag('js', new Date());
 		gtag('config', 'G-S4PRHTKMJ6');
 	</script>
-	<link rel="stylesheet" href="css/style.css?id=7">
+	<link rel="stylesheet" href="css/style.css?id=8">
 	<link rel="canonical" href="https://gordiichuk.com">
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 	<meta charset="UTF-8">
@@ -3871,7 +3871,7 @@
 		</div>
 	</div>
 	<div id="map" class="map"></div>
-	<script src="js/script.js?id=7"></script>
+	<script src="js/script.js?id=8"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWL2Cp_rDpY0EtgIYNRyeUlUdm1IiQ4WQ&callback=initMap&v=weekly&libraries=places" async defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 	<script>
@@ -3955,36 +3955,33 @@
 				$('.header,.search-input,.header__block-more,.page-info,.map-light-hint,.about-alerts-map,.block-about-me').toggleClass('dark-mode')
 				$('.header__update-time').addClass('none');
 			});
-			$('.header__punkty-nezlamnosty').click(function(event){
-				$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').removeClass('sheltersActive lightActive');
-				$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').toggleClass('punktsActive');
-				$('.about-alerts-map,.header__block-more,.block-about-me,.search-form,.search-input').removeClass('active');
-				$('.time-block').addClass('dn');
-				$('.header__update-time').addClass('none');
-				$('.map-light-hint,.info__map-light').addClass('none');
-				$('.info__map-punkts').removeClass('none');
-			});
-			$('.header__map-shelters').click(function(event){
-				$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').removeClass('punktsActive lightActive');
-				$('.block-about-me,.search-form,.search-input').removeClass('active');
-				$('.time-block').addClass('dn');
-				$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').toggleClass('sheltersActive');
-				$('.about-alerts-map').addClass('active');
-				$('.header__update-time').addClass('none');
-				$('.map-light-hint,.info__map-light,.info__map-punkts').addClass('none');
-			});
-			$('.about-alerts-map__close').click(function(event){
-				$('.about-alerts-map').removeClass('active');
-			});
-			$('.header__map-light').click(function(event){
-				$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').removeClass('sheltersActive punktsActive');
-				$('.block-about-me,.search-form,.search-input,.about-alerts-map,.header__block-more').removeClass('active');
-				$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').toggleClass('lightActive');
-				$('.map-light-hint').removeClass('none');
-				$('.info__map-punkts').addClass('none');
-				$('.info__map-light').removeClass('none');
-				$('.time-block').removeClass('dn');
-			});
+			// $('.header__punkty-nezlamnosty').click(function(event){
+				// $('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').removeClass('sheltersActive lightActive');
+				// $('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').toggleClass('punktsActive');
+				// $('.about-alerts-map,.header__block-more,.block-about-me,.search-form,.search-input').removeClass('active');
+				// $('.time-block').addClass('dn');
+				// $('.header__update-time').addClass('none');
+				// $('.map-light-hint,.info__map-light').addClass('none');
+				// $('.info__map-punkts').removeClass('none');
+			// });
+			// $('.header__map-shelters').click(function(event){
+				// $('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').removeClass('punktsActive lightActive');
+				// $('.block-about-me,.search-form,.search-input').removeClass('active');
+				// $('.time-block').addClass('dn');
+				// $('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').toggleClass('sheltersActive');
+				// $('.about-alerts-map').addClass('active');
+				// $('.header__update-time').addClass('none');
+				// $('.map-light-hint,.info__map-light,.info__map-punkts').addClass('none');
+			// });
+			// $('.header__map-light').click(function(event){
+				// $('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').removeClass('sheltersActive punktsActive');
+				// $('.block-about-me,.search-form,.search-input,.about-alerts-map,.header__block-more').removeClass('active');
+				// $('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').toggleClass('lightActive');
+				// $('.map-light-hint').removeClass('none');
+				// $('.info__map-punkts').addClass('none');
+				// $('.info__map-light').removeClass('none');
+				// $('.time-block').removeClass('dn');
+			// });
 			$('.btn-about-map,.hide-about').click(function(event){
 				$('.block-about-me,.header__block-more,.search-input,.search-form').removeClass('active');
 				$('.header__update-time').addClass('none');

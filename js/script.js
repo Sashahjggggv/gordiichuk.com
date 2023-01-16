@@ -4340,12 +4340,67 @@ function initMap() {
     return marker;
   });
 
+	
+
+	// Links maps
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+	const mapType = urlParams.get('maps')
+	// console.log(mapType);
+	if (mapType == 'shelters') {
+		console.log('Shelters');
+		hidePunkts();
+		hideZones();
+		showShelters();
+		$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').removeClass('punktsActive lightActive');
+		$('.block-about-me,.search-form,.search-input').removeClass('active');
+		$('.time-block').addClass('dn');
+		$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').toggleClass('sheltersActive');
+		$('.about-alerts-map').addClass('active');
+		$('.header__update-time').addClass('none');
+		$('.map-light-hint,.info__map-light,.info__map-punkts').addClass('none');
+	} 
+	else if (mapType == 'punkts') {
+		console.log('Punkts');
+		hideShelters();
+		hideZones();
+		showPunkts();
+		$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').removeClass('sheltersActive lightActive');
+		$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').toggleClass('punktsActive');
+		$('.about-alerts-map,.header__block-more,.block-about-me,.search-form,.search-input').removeClass('active');
+		$('.time-block').addClass('dn');
+		$('.header__update-time').addClass('none');
+		$('.map-light-hint,.info__map-light').addClass('none');
+		$('.info__map-punkts').removeClass('none');
+	} 
+	else {
+		console.log('Error link parameter');
+		hidePunkts();
+		hideShelters();
+		showZones();
+		$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').removeClass('sheltersActive punktsActive');
+		$('.block-about-me,.search-form,.search-input,.about-alerts-map,.header__block-more').removeClass('active');
+		$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').toggleClass('lightActive');
+		$('.map-light-hint').removeClass('none');
+		$('.info__map-punkts').addClass('none');
+		$('.info__map-light').removeClass('none');
+		$('.time-block').removeClass('dn');
+	}
+	// End links maps
+
   document
     .getElementById("punkts")
     .addEventListener("click", function(){
 			hideShelters();
 			hideZones();
 			showPunkts();
+			$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').removeClass('sheltersActive lightActive');
+			$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').toggleClass('punktsActive');
+			$('.about-alerts-map,.header__block-more,.block-about-me,.search-form,.search-input').removeClass('active');
+			$('.time-block').addClass('dn');
+			$('.header__update-time').addClass('none');
+			$('.map-light-hint,.info__map-light').addClass('none');
+			$('.info__map-punkts').removeClass('none');
 		});
 	document
 		.getElementById("mapLight")
@@ -4353,6 +4408,13 @@ function initMap() {
 			hidePunkts();
 			hideShelters();
 			showZones();
+			$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').removeClass('sheltersActive punktsActive');
+			$('.block-about-me,.search-form,.search-input,.about-alerts-map,.header__block-more').removeClass('active');
+			$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').toggleClass('lightActive');
+			$('.map-light-hint').removeClass('none');
+			$('.info__map-punkts').addClass('none');
+			$('.info__map-light').removeClass('none');
+			$('.time-block').removeClass('dn');
 		});
 	document
 		.getElementById("shelters")
@@ -4360,6 +4422,13 @@ function initMap() {
 			hidePunkts();
 			hideZones();
 			showShelters();
+			$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').removeClass('punktsActive lightActive');
+			$('.block-about-me,.search-form,.search-input').removeClass('active');
+			$('.time-block').addClass('dn');
+			$('.header__map-light,.header__punkty-nezlamnosty,.header__map-shelters').toggleClass('sheltersActive');
+			$('.about-alerts-map').addClass('active');
+			$('.header__update-time').addClass('none');
+			$('.map-light-hint,.info__map-light,.info__map-punkts').addClass('none');
 		});
 		
 	function setMapOnPunkts(map) {
