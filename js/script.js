@@ -3404,8 +3404,8 @@ function initMap() {
 			zones[57].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[58].setOptions({fillColor: "red", strokeColor: "red"});
 		} else if ( hours >= 19 && hours < 23 ) {
-			zones[1setOptions({fillColor: "red", strokeColor: "red"});
-			zones[7setOptions({fillColor: "red", strokeColor: "red"});
+			zones[1].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[7].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[9].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[13].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[15].setOptions({fillColor: "red", strokeColor: "red"});
