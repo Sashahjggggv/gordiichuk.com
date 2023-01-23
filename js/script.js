@@ -3412,36 +3412,32 @@ function initMap() {
 			zones[51].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[52].setOptions({fillColor: "red", strokeColor: "red"});
 		} else if ( hours >= 19 && hours < 23 ) {
-			zones[1].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[7].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[9].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[13].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[0].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[2].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[3].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[4].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[5].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[8].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[10].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[11].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[12].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[15].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[16].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[17].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[18].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[21].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[23].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[24].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[25].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[20].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[22].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[26].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[27].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[29].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[30].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[31].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[34].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[35].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[37].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[40].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[41].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[43].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[48].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[50].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[53].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[54].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[55].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[56].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[57].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[58].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[28].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[32].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[33].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[36].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[38].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[39].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[42].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[44].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[45].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[51].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[52].setOptions({fillColor: "red", strokeColor: "red"});
 		} else {
 			console.log('Current time detection error');
 		}
@@ -3609,36 +3605,32 @@ function initMap() {
 	'.time-block__fifth-lamp_52').addClass('off');
 	// Лампочка №6
 	$(
-	'.time-block__last-lamp_1,'+
-	'.time-block__last-lamp_7,'+
-	'.time-block__last-lamp_9,'+
-	'.time-block__last-lamp_13,'+
+	'.time-block__last-lamp_0,'+
+	'.time-block__last-lamp_2,'+
+	'.time-block__last-lamp_3,'+
+	'.time-block__last-lamp_4,'+
+	'.time-block__last-lamp_5,'+
+	'.time-block__last-lamp_8,'+
+	'.time-block__last-lamp_10,'+
+	'.time-block__last-lamp_11,'+
+	'.time-block__last-lamp_12,'+
 	'.time-block__last-lamp_15,'+
+	'.time-block__last-lamp_16,'+
 	'.time-block__last-lamp_17,'+
-	'.time-block__last-lamp_18,'+
-	'.time-block__last-lamp_21,'+
-	'.time-block__last-lamp_23,'+
-	'.time-block__last-lamp_24,'+
-	'.time-block__last-lamp_25,'+
+	'.time-block__last-lamp_20,'+
+	'.time-block__last-lamp_22,'+
 	'.time-block__last-lamp_26,'+
-	'.time-block__last-lamp_27,'+
-	'.time-block__last-lamp_29,'+
-	'.time-block__last-lamp_30,'+
-	'.time-block__last-lamp_31,'+
-	'.time-block__last-lamp_34,'+
-	'.time-block__last-lamp_35,'+
-	'.time-block__last-lamp_37,'+
-	'.time-block__last-lamp_40,'+
-	'.time-block__last-lamp_41,'+
-	'.time-block__last-lamp_43,'+
-	'.time-block__last-lamp_48,'+
-	'.time-block__last-lamp_50,'+
-	'.time-block__last-lamp_53,'+
-	'.time-block__last-lamp_54,'+
-	'.time-block__last-lamp_55,'+
-	'.time-block__last-lamp_56,'+
-	'.time-block__last-lamp_57,'+
-	'.time-block__last-lamp_58').addClass('off');
+	'.time-block__last-lamp_28,'+
+	'.time-block__last-lamp_32,'+
+	'.time-block__last-lamp_33,'+
+	'.time-block__last-lamp_36,'+
+	'.time-block__last-lamp_38,'+
+	'.time-block__last-lamp_39,'+
+	'.time-block__last-lamp_42,'+
+	'.time-block__last-lamp_44,'+
+	'.time-block__last-lamp_45,'+
+	'.time-block__last-lamp_51,'+
+	'.time-block__last-lamp_52').addClass('off');
 
 	// Пункти незламності
 	const positions = [
