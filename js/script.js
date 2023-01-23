@@ -3425,7 +3425,6 @@ function initMap() {
 			zones[57].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[58].setOptions({fillColor: "red", strokeColor: "red"});
 		} else if ( hours >= 19 && hours < 23 ) {
-			zones[0].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[2].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[3].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[4].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3436,7 +3435,6 @@ function initMap() {
 			zones[12].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[15].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[16].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[17].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[20].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[22].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[26].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3631,7 +3629,6 @@ function initMap() {
 	'.time-block__fifth-lamp_58').addClass('off');
 	// Лампочка №6
 	$(
-	'.time-block__last-lamp_0,'+
 	'.time-block__last-lamp_2,'+
 	'.time-block__last-lamp_3,'+
 	'.time-block__last-lamp_4,'+
@@ -3642,7 +3639,6 @@ function initMap() {
 	'.time-block__last-lamp_12,'+
 	'.time-block__last-lamp_15,'+
 	'.time-block__last-lamp_16,'+
-	'.time-block__last-lamp_17,'+
 	'.time-block__last-lamp_20,'+
 	'.time-block__last-lamp_22,'+
 	'.time-block__last-lamp_26,'+
