@@ -3284,7 +3284,6 @@ function initMap() {
 			zones[14].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[17].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[18].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[19].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[21].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[23].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[24].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3316,6 +3315,7 @@ function initMap() {
 			zones[12].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[15].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[16].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[19].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[20].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[22].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[26].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3342,7 +3342,6 @@ function initMap() {
 			zones[13].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[14].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[17].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[19].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[21].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[23].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[24].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3375,6 +3374,7 @@ function initMap() {
 			zones[11].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[12].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[16].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[19].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[20].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[22].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[28].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3401,7 +3401,6 @@ function initMap() {
 			zones[14].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[17].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[18].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[19].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[21].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[23].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[24].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3485,7 +3484,6 @@ function initMap() {
 		'.time-block__first-lamp_14,'+ 
 		'.time-block__first-lamp_17,'+ 
 		'.time-block__first-lamp_18,'+ 
-		'.time-block__first-lamp_19,'+ 
 		'.time-block__first-lamp_21,'+ 
 		'.time-block__first-lamp_23,'+ 
 		'.time-block__first-lamp_24,'+ 
@@ -3517,6 +3515,7 @@ function initMap() {
 		'.time-block__second-lamp_12,'+
 		'.time-block__second-lamp_15,'+
 		'.time-block__second-lamp_16,'+
+		'.time-block__second-lamp_19,'+
 		'.time-block__second-lamp_20,'+
 		'.time-block__second-lamp_22,'+
 		'.time-block__second-lamp_26,'+
@@ -3543,7 +3542,6 @@ function initMap() {
 		'.time-block__third-lamp_13,'+
 		'.time-block__third-lamp_14,'+
 		'.time-block__third-lamp_17,'+
-		'.time-block__third-lamp_19,'+
 		'.time-block__third-lamp_21,'+
 		'.time-block__third-lamp_23,'+
 		'.time-block__third-lamp_24,'+
@@ -3577,6 +3575,7 @@ function initMap() {
 	'.time-block__fourth-lamp_11,'+
 	'.time-block__fourth-lamp_12,'+
 	'.time-block__fourth-lamp_16,'+
+	'.time-block__fourth-lamp_19,'+
 	'.time-block__fourth-lamp_20,'+
 	'.time-block__fourth-lamp_22,'+
 	'.time-block__fourth-lamp_28,'+
