@@ -3434,6 +3434,7 @@ function initMap() {
 			zones[12].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[15].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[16].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[19].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[20].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[22].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[26].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3638,6 +3639,7 @@ function initMap() {
 	'.time-block__last-lamp_12,'+
 	'.time-block__last-lamp_15,'+
 	'.time-block__last-lamp_16,'+
+	'.time-block__last-lamp_19,'+
 	'.time-block__last-lamp_20,'+
 	'.time-block__last-lamp_22,'+
 	'.time-block__last-lamp_26,'+
