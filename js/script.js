@@ -3428,21 +3428,23 @@ function initMap() {
 			zones[57].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[58].setOptions({fillColor: "red", strokeColor: "red"});
 		} else if ( hours >= 19 && hours < 23 ) {
+			zones[0].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[2].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[3].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[4].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[5].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[6].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[8].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[10].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[11].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[12].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[15].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[16].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[17].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[19].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[20].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[22].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[26].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[28].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[32].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[33].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[36].setOptions({fillColor: "red", strokeColor: "red"});
@@ -3451,6 +3453,9 @@ function initMap() {
 			zones[42].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[44].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[45].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[46].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[47].setOptions({fillColor: "red", strokeColor: "red"});
+			zones[49].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[51].setOptions({fillColor: "red", strokeColor: "red"});
 			zones[52].setOptions({fillColor: "red", strokeColor: "red"});
 		} else {
