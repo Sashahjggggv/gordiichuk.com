@@ -412,6 +412,13 @@ body {
   transform: translateX(-5px);
 }
 
+.auto-show-today {
+  display: none;
+}
+.auto-show-today.active {
+  display: inline;
+}
+
 .time-block {
   position: absolute;
   bottom: 10px;
@@ -424,10 +431,13 @@ body {
   color: #fff;
   display: none;
   border-radius: 15px;
-  padding: 20px 20px 120px 20px;
+  padding: 20px 20px 110px 20px;
   transition: all 0.5s ease;
   background: rgba(47, 47, 162, 0.9);
   background: #333;
+}
+.time-block.padding-for-tomorrow-block {
+  padding: 20px 20px 125px 20px;
 }
 .time-block__block-image > img:first-child,
 .time-block__block-image.off > img:last-child {
@@ -502,6 +512,24 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.time-block__flex-box.active1::after {
+  content: 'На завтра';
+  position: absolute;
+  top: -23px;
+  right: 0;
+  width: 86%;
+  height: 20px;
+  border: 2px solid #4054FF;
+  color: #4054FF;
+  font-weight: 500;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.time-block__flex-box.active2::after {
+  width: 75%;
+}
 .time-block__mini-flex-box {
   position: relative;
   height: 100%;
@@ -530,6 +558,32 @@ body {
   padding: 10px;
   border-radius: 10px;
 }
+.time-block__mini-flex-box_1,
+.time-block__mini-flex-box_2 {
+  display: none;
+}
+.time-block__mini-flex-box_1.active,
+.time-block__mini-flex-box_2.active {
+  display: flex;
+}
+.time-block__mini-flex-box.currentTime::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 4px;
+  background: #4054FF;
+  border-radius: 2px;
+}
+.time-block__mini-flex-box.off img.time-block__lamp-icon_on {
+  display: none;
+}
+.time-block__mini-flex-box.off img.time-block__lamp-icon_off {
+  display: inline-block;
+}
+
 .time-block__detail-info.active {
   display: block;
 }
@@ -575,10 +629,13 @@ body {
     transform: translateX(-50%);
     border-radius: 25px;
     width: 98%;
-    padding: 10px 10px 110px 10px;
+    padding: 10px 10px 100px 10px;
+  }
+  .time-block.padding-for-tomorrow-block {
+    padding: 10px 10px 125px 10px;
   }
   .time-block__flex-box {
-    height: 80px;
+    height: 75px;
   }
   .time-block__times {
     font-size: 14px;

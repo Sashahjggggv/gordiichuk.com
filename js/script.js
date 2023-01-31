@@ -51,8 +51,6 @@ function initMap() {
 		if(place.address_components) {
 			address = [
 				(place.address_components[0] && place.address_components[0].short_name || ''),
-				// (place.address_components[1] && place.address_components[1].short_name || ''),
-				// (place.address_components[2] && place.address_components[2].short_name || ''),
 			].join(' ');
 		}
 
@@ -74,7 +72,7 @@ function initMap() {
 		$('.header__update-time').addClass('none');
 		$('.page-info').toggleClass('active');
 	} else {
-		console.log('Error show block-info')
+		console.log('Info-block link-parameter is empty')
 	}
 
 	let zones = [];
@@ -134,7 +132,11 @@ function initMap() {
 					{ lat: 50.603844523044444, lng: 26.277902132285455 },
 				],
 			],
-			'#008000'
+			'вул. Студентська 2, 7, 8, 14, вул. Карнаухова 1-51, 11а, 11б, вул. Медична, вул.' +
+		'Тернопільська 1-24, вул. О. Новака 1-63, вул. Відінська 40а, 42а, 44, 48, 50, вул.' +
+		'Архітектора Бургіньйона 2, 4, 27, 35, 37, 39, вул. С.Крушельницької 39, 41, 43, 45, 47,' +
+		'49, вул. Леонтовича, вул. Тракторна 7, 9, 9а, вул. Драганчука 4, вул. Стельмаха 13а,' +
+		'18, 18а.',
 		],
 		// Блок №2
 		[
@@ -246,7 +248,14 @@ function initMap() {
 					{ lat: 50.613132830392296, lng: 26.233906757722092 },
 				],
 			],
-			'#008000'
+			'вул.24 серпня 2, 5, 7, 24, (частково) , вул.Л.Толстого (частково), вул.Драгоманова' +
+		'(частково), вул.Олександра Борисенка 2, 2а, 4, ТЦ Злата Плаза, вул.Чорновола 1,' +
+		'вул.С.Бандери 1а, 1б, 1д, 1е, 2, вул.Кооперативна 3а, (частково), вул.Скульптора' +
+		'Сосновського, вул.Соборна 39, 57, 61, 63, 63в, 65, 67, 69, 13, 51,56, 190а, 192, 262,' +
+		'вул.Замкова, вул.Шкільна, вул.Вересая, вул.Мазепи 29, 31, (частково),' +
+		'вул.Шевченка 26, 57б, (частково), вул.Набережна 10а, вул.Полуботка 4, 6а, 35,' +
+		'вул.Базарна 8, вул.Пересопницька (частково - район базару), вул.Гоголя,' +
+		'вул.Зарічна 6, вул.Дворецька комбінат напівфабрикатів,',
 		],
 		// Блок №3
 		[
@@ -285,7 +294,8 @@ function initMap() {
 					{ lat: 50.6385319390877, lng: 26.23868780821304 },
 				],
 			],
-			'#008000'
+			'вул.Будівельників, Князя Володимира 75, 108, 108а, 109а, 111, 112, 112б, 112в, 124,' +
+		'126, 128, 130',
 		],
 		// Блок №4
 		[
@@ -323,7 +333,10 @@ function initMap() {
 					{ lat: 50.640201314313565, lng: 26.277774500475555 },
 				],
 			],
-			'#008000'
+			'вул.Буковинська 12, 18, 24, Новобармацька (частково), Спорт-лайф, ЖК Спектрум,' +
+		'АТБ на Захисників Маріуполя, Захисників Маріуполя 1, 3, 3а Буковинська 3, 4, 5, 6,' +
+		'9, 14а, Льонокомбінатівська 1, 3, 5, 9, 9а, Червонія 32, Київська 77, 81, 83,' +
+		'Вишиванки 34, 37',
 		],
 		// Блок №5
 		[
@@ -357,7 +370,10 @@ function initMap() {
 					{ lat: 50.627671612753815, lng: 26.27777737242506 },
 				],
 			],
-			'#008000'
+			'вул.Буковинська 5, 11, 12, 14а, 16, 18, 24, 36 - 44, Новобармацька (частково),' +
+		'Захисників Маріуполя 7, 41 - 69, Богдана Хмельницького 45, 49 - 63,' +
+		'Горбачевського, Степанишина, Борового, Кобзарська 14 - 32, Виговського 45,' +
+		'Вишиванки 37',
 		],
 		// Блок №6 (none)
 		[
@@ -389,7 +405,8 @@ function initMap() {
 				// 	{ lat: 50.63951246874903, lng: 26.26387036205241 },
 				// ],
 			],
-			'#008000'
+			'вул.В.Дивізії 1, 3, 5, 7, 9, Коновальця 1, 2, 2а, 4, 6, 8, 10, 12, 14, 18, 22, 24, 26, 28, 32,' +
+		'38, Богоявленська 35',
 		],
 		// Блок №7
 		[
@@ -445,7 +462,10 @@ function initMap() {
 				{ lat: 50.61091834707401, lng: 26.27599106086072 },
 				{ lat: 50.61184046489978, lng: 26.275089652110363 },
 			],
-			'#008000'
+			'вул.Відінська 25, 27, 29, 31, 33, 35, 35а, 37, 37а, 38, 39, 40, 41, 42, 46, вул.Дарвіна,' +
+		'вул.Осіпова, вул.Вербицького, вул.Кременецька, вул.Самокиша, вул.Архітектора' +
+		'Бургіньйона (частково), вул.С.Бандери 44, 46, 48, 54, 55, 56, 58, 59, 60, 60а, 63, 65,' +
+		'вул.М.Вовчка (частково), вул.Транспортна (частково).',
 		],
 		// Блок №8
 		[
@@ -508,7 +528,8 @@ function initMap() {
 					{ lat: 50.60975204544671, lng: 26.28081166788837 },
 				],
 			],
-			'#008000'
+			'вул.Відінська 3, 5, 7, 9а, 18, 19, 21, 23, 25, вул.С.Бандери 67, 67а, 67б, 69, 69а, 69б,' +
+		'вул.Київська 22, 22а, 30, 32, 34, 36, 40а, 42, 44, 48, 65, 67, 69, 77',
 		],
 		// Блок №9+6 обєднано
 		[
@@ -542,7 +563,8 @@ function initMap() {
 					{ lat: 50.6394310775378, lng: 26.265833386930698 },
 				],
 			],
-			'#008000'
+			'вул.Волинської Дивізії 1, 3 ,5, 7, 9, 11, 11а, 11б, 15, 19, 21, 22а, 23, 29, 30, 31, Євгена' +
+		'Коновальця 6, 8, 10, 12, 14, 18, 20, 22, 24, 26, 28, 32, 34, 38, 40, 42, 44, 48, 50, 52',
 		],
 		// Блок №10
 		[
@@ -593,7 +615,10 @@ function initMap() {
 					{ lat: 50.58648975295205, lng: 26.262901833653007 },
 				],
 			],
-			'#008000'
+			'вул.Володимира Стельмаха (частково), район Червоні гори, вул.Возницького,' +
+		'вул.Поліщука, вул.Литвина, вул.Волошина (ЧГ), вул.Ак.Кримського, вул.Гофмана,' +
+		'вул.Серпанкова, вул.Ступницького, вул.Дорогобузька, вул.Антоновича,' +
+		'с.Колоденка',
 		],
 		// Блок №11
 		[
@@ -652,7 +677,9 @@ function initMap() {
 					{ lat: 50.63565118327372, lng: 26.2689695655289 },
 				],
 			],
-			'#008000'
+			'вул.Генерала Безручка 2, 4, 6, 8, 10, 12, Князя Романа 1, 3, 5, 7, 9, 11, 13, 15а,' +
+		'Червонія 17, 19, 21, 29, 57, 59, 61, 63, 65, Олега Тарасюка, Козацька, Кривоноса,' +
+		'Слави, Сірка (частково), Грушевського 2а',
 		],
 		// Блок №12
 		[
@@ -683,7 +710,9 @@ function initMap() {
 					{ lat: 50.637775336897086, lng: 26.2725235869558 },
 				],
 			],
-			'#008000'
+			'вул.Генерала Безручка 5, 5а, 7, 9, 14, 16, 18, 20, 22, 24, 26, 28, 30, Фабрична 1, 1а, 1г,' +
+		'3, 5, 5а, 8, 12, 14, 16, Льонокомбінатівська 5, 7, 9, 11, 15, 19, Князя Романа 4, 6, 8, 10,' +
+		'12, 14а, 16, 18, Червонія 67, 69, 71, 73, 75, 77',
 		],
 		// Блок №13
 		[
@@ -767,7 +796,14 @@ function initMap() {
 					{ lat: 50.621346633752864, lng: 26.278806215965446 },
 				],
 			],
-			'#008000'
+			'вул.Грушевського 6-37, 37а, 42, вул.Гранична, вул. Клима Савури 8, вул.Вишиванка' +
+		'1 - 15, вул.Івана Франка (частково), вул.Базіна, вул.Бульби Боровця,' +
+		'вул.Центральної Ради, вул.Грушевського (частково), вул.Червонія 8, 8а, 8в, 8г,' +
+		'вул.Нова 20, МПК Текстильник, Грушевського 2а, вул.Уласа Самчука,' +
+		'вул.Вишенського 4, 6, 4а, вул.Виговського 38, 28, 40, 45, вул.Богдана' +
+		'Хмельницького, Конотопської битви, Повстанська, Кропивницького, Петрусенка,' +
+		'Джека Лондона, Павла Пащевського, Анни Валентинович, Винниченка (частково),' +
+		'Буковинська (частково), Вишиванка 37',
 		],
 		// Блок №14
 		[
@@ -786,7 +822,7 @@ function initMap() {
 					{ lat: 50.605773234802086, lng: 26.282981633909177 },
 				],
 			],
-			'#008000'
+			'вул.Д.Галицького 25, Фоззі.',
 		],
 		// Блок №15
 		[
@@ -914,7 +950,16 @@ function initMap() {
 					{ lat: 50.623258582336376, lng: 26.243772571738567 },
 				],
 			],
-			'#008000'
+			'вул.Дорошенка, вул.Пирогова, вул.Княгиницького, вул.Полуботка, вул.Соборна' +
+		'156, 177, 181, 183, 185, 189, 190, 191, 192, 195, 260, 262, 276, вул.Базарна 6, 8, 9,' +
+		'вул.Кубанська, вул.Пересопницька, вул.С. Ковалевської 1-34, вул.Дворецька 1-5, 46,' +
+		'48, вул.Яворницького, вул.Хмільна, вул. Петра Могили, вул.Гарна, вул.Райдужна,' +
+		'пров.Райдужний, вул.Межова, вул.Бічна, вул.Ясна, вул.Лесі Українки, вул.Поповича' +
+		'16-24, вул.Прохідна, вул.Шекспіра, вул.Соборна 207, вул.Олени Пчілки 3-8,' +
+		'вул.Мазепи 19, 26, 29, 30, 31, 32, район продуктового ринку, вул.Петлюри 5, 10,' +
+		'вул.Шевченка 18, 20, 51 - 85, вул.Набережна 4, 6, 8, 10, вул.Олександра Борисенка' +
+		'3, 5, 7, вул.Вересая, вул.16 Липня 2, 2а, 6, 8, 10, 18-59, вул.Драгоманова 24, 26, ТЦ' +
+		'"Злата Плаза", Облмуздрамтеатр, вул.Сагайдачного, вул.Правди',
 		],
 		// Блок №16
 		[
@@ -936,7 +981,8 @@ function initMap() {
 					{ lat: 50.60208409573519, lng: 26.272949894425828 },
 				],
 			],
-			'#008000'
+			'вул.Енергетиків (частково), вул.Люблінська, вул.Михайла Борейка,' +
+		'вул.Володимира Стельмаха (частково), вул.Студентська',
 		],
 		// Блок №17
 		[
@@ -953,7 +999,7 @@ function initMap() {
 					{ lat: 50.62970962343184, lng: 26.28564037950837 },
 				],
 			],
-			'#008000'
+			'вул.Захисників Маріуполя 25а, 42, 89, Кобзарська 85, Автомобілістів',
 		],
 		// Блок №18
 		[
@@ -1017,7 +1063,11 @@ function initMap() {
 					{ lat: 50.62580749316718, lng: 26.247725974418863 },
 				],
 			],
-			'#008000'
+			'вул.Кавказька 15, Набережна 4, 10, 14, 20, 22, 24, 26, 28, 30, 32, 34, Петлюри 9, 11,' +
+		'13, 19, 31а, Литовська 10, 11, 20 - 40, 41, 46 -52а, 53, 77, проспект Миру 12, 13, 14,' +
+		'15, 16, 17, 18, 19, 21, 23, Міцкевича 15, театр Ляльок, Шевченка (приватний сектор),' +
+		'9а, 32, 45, 54, 65, 73, 73а, 102, 103, 105, вул.Гетьмана Мазепи 3 - 19, Сагайдачного 7,' +
+		'8, 10, 12',
 		],
 		// Блок №19
 		[
@@ -1035,7 +1085,8 @@ function initMap() {
 					{ lat: 50.60822475623515, lng: 26.32533543456983 },
 				],
 			],
-			'#008000'
+			'вул.Київська (часткого в районі Камаз Транс Сервіс), Зоопарк, Грін хілс, Центр' +
+		'Київський 106.',
 		],
 		// Блок №20
 		[
@@ -1100,7 +1151,17 @@ function initMap() {
 					{ lat: 50.61503500486543, lng: 26.268925468512276 },
 				],
 			],
-			'#008000'
+			'вул.Київська 4, 6, 6в, 8, вул.Крушельницької 29, 32, 32а, 44, 46, 49, 52а, 62, 62а,' +
+		'вул.Ушинського, вул.Васильченка, вул.Транспортна 11а, 13а, 14, 16, вул.Відінська 2,' +
+		'4, 8, 8а, 10, 12, 14, 16, вул.М.Вовчка 14, 15, 16, вул.Лисенка, вул.Кн.Ольги 21, 23, 25,' +
+		'вул.Ст.Бандери 36а, 38, 40, 42, 44, вул.Дарвіна (частково), вул.Академіка' +
+		'Бургіньйона 17-43 (частково), вул.В.Сліпак, вул.Карпінського, вул.Шепетівська',
+		'вул.Кн.Володимира 10, 10а, ПДМ, вул.Героїв Гурб, вул.Нова, вул.С.Рижука,' +
+		'вул.М.Міхновського, пров.Граничний, вул.Носаля, вул.Херсонська, Технічна,' +
+		'вул.Перший Промінь 4а, вул.Покровська, вул.Грушевського 5, 23, 32, 38, 40, 40а, 43 -' +
+		'71, 75, 77, 81, Клима Савура 14, 14а, вул.Видумка 26, Київська 53, 65, 77, 79,' +
+		'Вишиванка 24, 26, 28, 32а, 33, 33а, 33б, 33г, 35, 36, 40, 46, 48, Вишенського 10,' +
+		'Березовського 1, 2,',
 		],
 		// Блок №21
 		[
@@ -1186,7 +1247,12 @@ function initMap() {
 					{ lat: 50.61766053485173, lng: 26.283448341530743 },
 				],
 			],
-			'#008000'
+			'вул.Кн.Володимира 10, 10а, ПДМ, вул.Героїв Гурб, вул.Нова, вул.С.Рижука,' +
+			'вул.М.Міхновського, пров.Граничний, вул.Носаля, вул.Херсонська, Технічна,' +
+			'вул.Перший Промінь 4а, вул.Покровська, вул.Грушевського 5, 23, 32, 38, 40, 40а, 43 -' +
+			'71, 75, 77, 81, Клима Савура 14, 14а, вул.Видумка 26, Київська 53, 65, 77, 79,' +
+			'Вишиванка 24, 26, 28, 32а, 33, 33а, 33б, 33г, 35, 36, 40, 46, 48, Вишенського 10,' +
+			'Березовського 1, 2',
 		],
 		// Блок №22
 		[
@@ -1240,7 +1306,9 @@ function initMap() {
 					{ lat: 50.62892751853709, lng: 26.259778279006113 },
 				],
 			],
-			'#008000'
+			'вул.Кн.Володимира 28б, 36, 37, 42-64, Міцкевича 9, 9а, 11, Червонія 1, 3, Перший' +
+			'Промінь 7б, Макаренка, Глибока, Черняхівського, Уласа Самчука (частково), Гонти,' +
+			'Залізняка, І. Сірка, Олександрійська, О.Тарасюка, Крейдяна 10.',
 		],
 		// Блок №23
 		[
@@ -1301,7 +1369,9 @@ function initMap() {
 					{ lat: 50.61857563099253, lng: 26.254582608072997 },
 				],
 			],
-			'#008000'
+			'вул.Князя Володимира 5, Соборна 1/1, 1а, 3, 5, 7, 9, 10, 11, 11а, 12, 12а, 13, 14, 15,' +
+			'17, Покровський Собор, Гребінки 1, Полтави 1, Княгині Ольги 4, 4а, Чорновола 1,' +
+			'12, 15, 23а, Парк ім. Шевченка, ЦУМ, вул.Паркова',
 		],
 		// Блок №24
 		[
@@ -1329,7 +1399,9 @@ function initMap() {
 					{ lat: 50.61889483332992, lng: 26.20567081745328 },
 				],
 			],
-			'#008000'
+			'вул.Кулика і Гудачека 2, 4, 8, 6, 10, вул.Дубенська 40, 42, 44, 44в, 46, 46а,' +
+			'пров.Вінницький, вул.Вінницька, вул.Голубина (частково), обл вет лабораторія на' +
+			'Кулика і Гудачека, Тараса Козлишина 21Б',
 		],
 		// Блок №25
 		[
@@ -1393,7 +1465,8 @@ function initMap() {
 					{ lat: 50.63971469148482, lng: 26.20078128289542 },
 				],
 			],
-			"#008000"
+			'вул.Кулика і Гудачека 3, 42, 44, 46, вул.Млинівська 32, 33, 37, 39, вул.Корольова' +
+			'4а, 5а, 15, 15а, 15б, ринок Динамо',
 		],
 		// Блок №26
 		[
@@ -1454,7 +1527,8 @@ function initMap() {
 					{ lat: 50.63408288008234, lng: 26.20700202051744 },
 				],
 			],
-			'#008000'
+			'вул.Кулика і Гудачека 44, 46, 52, 54, 56, 58, вул.Млинівська 30, 34, 38, 41, 41а,'+
+			'Корольова 2, 4а, 17, 23, 27, Князя Острозького 2, 8, вул.Магеля 1, Соборна 277, 279',
 		],
 		// Блок №27
 		[
@@ -1514,7 +1588,9 @@ function initMap() {
 					{ lat: 50.614215144849794, lng: 26.250917571042027 },
 				],
 			],
-			'#008000'
+			'вул.Л. Толстого 3, 5, 10, 28, 30, 16 липня 7, 9, 15, 17, 31а, 32, 38, 39, 41, 42, 44, 52, 54,' +
+			'77, 79, 83, 87, 24 Серпня 11, Тиха 7, Діагностичний центр, Драгоманова 1, 4 - 24, 32,' +
+			'вул.Андрія Нечипорука, Чорновола 4 - 28, Соборна 19/21, Борисенка 7, 7а',
 		],
 		// Блок №28
 		[
@@ -1570,7 +1646,10 @@ function initMap() {
 					{ lat: 50.62554106848554, lng: 26.203856174411523 },
 				],
 			],
-			'#008000'
+			'вул.Липинського 53, 55, вул.Кулика і Гудачека 18, 24, 24а, 24б, 24в,' +
+			'вул.Небожинського 16, 16а, 18, 20, 20а, 26, 27, 31, 42б, 44а, 44б, 60, (частково)' +
+			'вул.Анатолія Грицая, вул.Тютюнника, вул.Яндали, вул.Воронного, вул.Кам’янець-' +
+			'Подільська<',
 		],
 		// Блок №29
 		[
@@ -1627,7 +1706,10 @@ function initMap() {
 					{ lat: 50.61985759615844, lng: 26.247482691216916 },
 				],
 			],
-			'#008000'
+			'вул.Литовська 42, 44, проспект Миру 7, 7а, 8, 9, 11, 10, 10а, 12, 13, вул.Кавказька 11,' +
+			'9, пров.Кавказький, вул.Петлюри 7, 13, 22, 25, 27, 28 - 36а, 37, Мазепи 4а,' +
+			'вул.Словацького, вул.Поштова, м-н Незалежності 5, 7, вул.Соборна 94, 108,' +
+			'Кінопалац, вул.Сагайдачного (частково).',
 		],
 		// Блок №30
 		[
@@ -1674,7 +1756,8 @@ function initMap() {
 					{ lat: 50.631085150799585, lng: 26.213764359038354 },
 				],
 			],
-			'#008000'
+			'вул.Магеля (АТС), вул.Соборна 253, 257, 259, 261, 263, 269, 275, вул.Ф.Сумневича,' +
+			'вул.Храпаченка, вул.Сошенка, вул.Плужника, вул.Вербова (частково) 2, 16а.',
 		],
 		// Блок №31
 		[
@@ -1714,7 +1797,9 @@ function initMap() {
 					{ lat: 50.63382267654752, lng: 26.20709196783681 },
 				],
 			],
-			'#008000'
+			'вул.Магеля 3, 5, 7, 9, 11, 13, 15, вул.Кулика і Гудачека 26, 28, 30, 36, ЗОШ No23,' +
+			'вул.Вербова 24, 38, 44, 46, 93. вул.Бухала 2, вул.Мономаха, вул.Федьковича,' +
+			'вул.Зерова, вул.Храпаченка, вул.Дунайська',
 		],
 		// Блок №32
 		[
@@ -1782,7 +1867,12 @@ function initMap() {
 					{ lat: 50.62475402887425, lng: 26.258389756360778 },
 				],
 			],
-			'#008000'
+			'вул.Миколи Негребецького 20, ЗОШ No5, Кошового 10а, 14, Кавказька 1, 2, 3, 4, 5, 6,' +
+			'7, 9, 10, 13, пров.Кавказький, Міцкевича 1, 2, 3, 8, 14, 32, 34, 40, 52-140, Свободи 15,' +
+			'Директорії 4, 5, 6, проспект Миру 2, 4, 6, 8, 8б, 9, Героїв поліції, ЗОШ№15, Пластова (частково),' +
+			'готель "Мир", Древлянська, Висока, пров. Млинівський, Князя Володимира 35,' +
+			'Шопена, Ігоря Волошина, майдан Незалежності, Соборна 14а, 16, 18, 22, 26, 32, 34,' +
+			'36, 38, 56',
 		],
 		// Блок №33
 		[
@@ -1862,7 +1952,8 @@ function initMap() {
 					{ lat: 50.64318896272853, lng: 26.229561541465905 },
 				],
 			],
-			'#008000'
+			'вул.Млинівська 1 -16, промзона на вул.Млинівській, Золотіїв, Кн.Володимира 111 -' +
+			'130, Біла 49 - 119 (непарні), пров.Робітничий',
 		],
 		// Блок №34
 		[
@@ -1918,7 +2009,9 @@ function initMap() {
 					{ lat: 50.63346276524161, lng: 26.230738794420517 },
 				],
 			],
-			'#008000'
+			'вул.Млинівська 18, 22, 23, 25, 26, 29а, 29б, 29в, 45, ОСС, РПЗ, МК-22, СУ-39,' +
+			'вул.Соборна 420, 422, 424, 426, 428, 430, 432, 434, 436, 438, 440, 440а, 442, 442а,' +
+			'442г, 444, 444а, 446, 446а, 448, 450, ТзОВ "Хлібодар"',
 		],
 		// Блок №35
 		[
@@ -1972,7 +2065,9 @@ function initMap() {
 					{ lat: 50.62712032895502, lng: 26.202707884223763 },
 				],
 			],
-			'#008000'
+			'вул.Ольжича, вул.П.Зінченка, вул.Джохара Дудаєва, вул.Т.Бриж, вул.М.Рильського,' +
+			'вул.О.Кобилянської, вул.Лірницька, вул.Боярка 39а, 40-62, вул.Вінницька 60 +' +
+			'(частково), вул.Гетьманська, вул.Волонтерська',
 		],
 		// Блок №36 
 		[
@@ -2006,7 +2101,8 @@ function initMap() {
 					{ lat: 50.62475402887425, lng: 26.258389756360778 },
 				],
 			],
-			'#008000'
+			'вул.Пластова, вул.Кн.Володимира 27а, вул.Хвильового, вул.Гребінки, вул.Квітки-' +
+			'Основ\'яненко, вул.Свободи, вул.Міцкевича 5, 7',
 		],
 		// Блок №37
 		[
@@ -2088,7 +2184,11 @@ function initMap() {
 					{ lat: 50.6143211921903, lng: 26.26882954322463 },
 				],
 			],
-			'#008000'
+			'вул.С.Бандери 24, 26, 26а, 28, 28б, 30, 32, 35а, 39, 41, вул.Відінська 9а, 21, 23,' +
+			'вул.Київська 2а, 4, 6, 8, 40, вул.Кн.Ольги 1, 3, 8, 10, 10а, 12, 14, 14а, 14б, 16,' +
+			'вул.С.Крушельницької 52а, 54, 58, 62, 69, 73, 75, 77, вул.Ушинського 9, 18,' +
+			'вул.Васильченка, вул.Відінська 2, 4, 8, 8а, 14, вул.Транспортна 11а, 14, 16, 18,' +
+			'вул.М.Вовчка 15, 16, 29а.',
 		],
 		// Блок №38
 		[
@@ -2130,7 +2230,8 @@ function initMap() {
 					{ lat: 50.61056313523491, lng: 26.281912683430683 },
 				],
 			],
-			'#008000'
+			'вул.С.Бандери 69, 69в, 69д, вул.Київська 40а, 46, 50, 52, 70, вул.Д.Галицького 1, 2а,' +
+			'3, 5, 7, ринок Андріївський (частково)',
 		],
 		// Блок №39
 		[
@@ -2169,7 +2270,9 @@ function initMap() {
 					{ lat: 50.61059799374128, lng: 26.286723291624693 },
 				],
 			],
-			'#008000'
+			'вул.С.Дем\'янчука 1а, 8, вул.Д.Галицького 9, 11, 15, Київська 36, 40а, 47,' +
+			'вул.Єдності, ринок Андріївський (частково), Березовського, Вишенського' +
+			'(приватний сектор), Валентинович, вул.Кармелюка, Тена, Вишиванка 35, 35а',
 		],
 		// Блок №40
 		[
@@ -2223,7 +2326,9 @@ function initMap() {
 					{ lat: 50.62192965319731, lng: 26.23098366466528 },
 				],
 			],
-			'#008000'
+			'вул.Соборна 229, 229а, 233, 236, 253, 253а, 257, 266, 370, 376 - 420 (парні), БОС 227,' +
+			'БОС 324, Ремзавод (котеджі), вул.Старицького 40а, вул.Вербова 4, вул.Нечая,' +
+			'вул.Огієнка, вул.Дівоча',
 		],
 		// Блок №41
 		[
@@ -2235,7 +2340,7 @@ function initMap() {
 					{ lat: 50.642138490592885, lng: 26.201421340042042 },
 				],
 			],
-			'#008000'
+			'вул.Соборна 285 а (шоколад)'
 		],
 		// Блок №42
 		[
@@ -2247,7 +2352,7 @@ function initMap() {
 					{ lat: 50.61692996090043, lng: 26.260613481081815 },
 				],
 			],
-			'#008000'
+			'вул.Соборна 5а'
 		],
 		// Блок №43
 		[
@@ -2303,7 +2408,9 @@ function initMap() {
 					{ lat: 50.638703237937314, lng: 26.268265518263654 },
 				],
 			],
-			'#008000'
+			'вул.Фабрична 7, 12, 20, 22, 24, Будівельників 6, Безручка 1, 1б, 3в, Богоявленська 4,' +
+			'6, 8, 10, 12, 14, 16, 17, 18, 26, 28, 36, 38, Генерала Безручка 1, 2, 2а, 5, Червонія 30,' +
+			'45, 47, 49, 53, 55, 57, ТЦ "Чайка", Захисників Маріуполя 25',
 		],
 		// Блок №44
 		[
@@ -2315,7 +2422,7 @@ function initMap() {
 					{ lat: 50.61327955700253, lng: 26.25599140765342 },
 				],
 			],
-			'#008000'
+			'вул.Чорновола 60'
 		],
 		// block None
 		[
@@ -2324,7 +2431,8 @@ function initMap() {
 					{ lat: 50.63580541961804, lng: 26.26797565720965 },
 				],
 			],
-			'#008000'
+			'вул.Шухевича 2, 4, 6, 8, 10, 12, 14, 18, 18а, 20, 22, 24, 26, 18е, 18д, Коновальця 2, 2а,' +
+			'3, 4, 5, 7, 9, 11, 13, Мельника 2, 4, 6, 6б, 7, 8, 10, 11, 12, 13, 14, 14/44, 16',
 		],
 		// Блок №45-46
 		[
@@ -2352,7 +2460,9 @@ function initMap() {
 					{ lat: 50.63887653096586, lng: 26.26578510715161 },
 				],
 			],
-			'#008000'
+			'вул.Шухевича 2, 4, 6, 8, 10, 12, 14, 18, 20, 22, 24, 26, Мельника 1, 2, 4, 6, 7, 8, 10, 11,' +
+			'12, 13, 14, 14, 16, 18, 20, 22, 28, 30, вул.Степова, Коновальця 17, 19, Крейдяна, пров.' +
+			'Шпанівський',
 		],
 		// Блок №47
 		[
@@ -2364,7 +2474,7 @@ function initMap() {
 					{ lat: 50.62766868306434, lng: 26.202500265338667 },
 				],
 			],
-			'#008000'
+			'ЕКВАТОР'
 		],
 		// Блок №48
 		[
@@ -2376,7 +2486,7 @@ function initMap() {
 					{ lat: 50.622553066340366, lng: 26.200357645535938 },
 				],
 			],
-			'#008000'
+			'ЕПІЦЕНТР'
 		],
 		// Блок №49
 		[
@@ -2408,7 +2518,8 @@ function initMap() {
 					{ lat: 50.611396831838434, lng: 26.310852867960623 },
 				],
 			],
-			'#008000'
+			'Камазтранссервіс, Трест Зеленого Господарства, ЖМ Перлина Рівного, вул.Київська' +
+			'92, 92а, 96а, 96б, 98, Європейський університет, вул.Федорова',
 		],
 		// Блок №50
 		[
@@ -2420,7 +2531,7 @@ function initMap() {
 					{ lat: 50.62416954605911, lng: 26.19980673023554 },
 				],
 			],
-			'#008000'
+			'МЕТРО'
 		],
 		// Блок №51
 		[
@@ -2488,14 +2599,14 @@ function initMap() {
 					{ lat: 50.613803769911485, lng: 26.255669542561222 },
 				],
 			],
-			"#008000",
+			'район "На Щасливому", вул.Чорновола (частково біля Щасливого), вул.Стрітенська',
 		],
 		// Блок №52
 		[
 			[
 				{ lat: 50.58968727624244, lng: 26.239914622303708 },
 			],
-			'#008000'
+			'район Басів кут',
 		],
 		// Блок №53 
 		[
@@ -2544,16 +2655,7 @@ function initMap() {
 					{ lat: 50.61245190300019, lng: 26.248414083141366 },
 				],
 			],
-			'#008000'
-		],
-		// Блок №54 new (тинне...)
-		[
-			[
-				[
-					{lat:50, lng: 50},
-				],
-			],
-			'#008000'
+			'район Басів кут, район Дворець (частково)',
 		],
 		// Блок №54
 		[
@@ -2612,7 +2714,20 @@ function initMap() {
 					{ lat: 50.628071534501615, lng: 26.21745597913607 },
 				],
 			],
-			'#008000'
+			'район Боярка (чатково), вул.О.Теліги (частково), вул.Вербова (частково) 37, 39, вул.О.' +
+			'Теліги (частково на перехресті з Небожинського), вул.Лабунського 3, 5, 5а,' +
+			'вул.Бухала 3, 9, 11, ЖК "Макарова-2010"',
+		],
+		// Блок №54 new (тинне...)
+		[
+			[
+				[
+					{lat:50, lng: 50},
+				],
+			],
+			'с. Тинне, вул. Січових Стрільців, Тиннівська,' +
+			'Гашека,Клубна,Чернігівська,Комарова,Лугова,Бригадна,Джерельна,Низова,Нивинс' +
+			'ткого,О.Васильєва,пр.Бригадний.',
 		],
 		// Блок №55
 		[
@@ -2647,7 +2762,8 @@ function initMap() {
 					{ lat: 50.585908266238825, lng: 26.122526461722362 },
 				],
 			],
-			'#008000'
+			'с.Омеляна (в межах м.Рівне), Агропереробка, район Басів Кут, вул.Дворецька' +
+			'(частково), с.Вересневе',
 		],
 		// Блок №56
 		[
@@ -2659,7 +2775,7 @@ function initMap() {
 					{ lat: 50.634502274353956, lng: 26.28507912673674 },
 				],
 			],
-			'#008000'
+			'Спорт-лайф, ЖК Спектрум',
 		],
 		// Блок №57
 		[
@@ -2698,7 +2814,16 @@ function initMap() {
 					{ lat: 50.58033714153633, lng: 26.281951990758273 },
 				],
 			],
-			'#008000'
+			'ТОВ Фозі, вул.Володимира Стельмаха (частково), вул.Відінська 39, 41,' +
+			'вул.Хліборобів, вул.Григоренка, район Новий Двір, район Червоні гори,' +
+			'вул.Серпанкова, вул.Бориса Андреєва, вул.Д.Багалія, вул. вул.Чорновола (частково' +
+			'в район НД), вул.Озерна, вул.Новодвірська, вул.Спокійна, вул.Літня, вул.Весняна,' +
+			'вул.Корнинська, вул.Чеська, пров.Весняний, вул.Хутірська, вул.Смерекова,' +
+			'вул.Скоропадського, вул.Ясенева, вул.Лозова, пров.Корнинський, частково "На' +
+			'Щасливому", вул.Прилужна, вул.Дачна, вул.Надвірна, вул.Світлична, вул.Зелена,' +
+			'вул.Барвиста, вул.Досвітня, вул.Журавлина, вул.Свєшнікова, вул.Трипільська,' +
+			'вул.Гостинна, вул.Відрадна, вул.Приозерна, вул.Озерна, вул.Гребельна,' +
+			'вул.Пасхальна, вул.Різдвяна.',
 		],
 		// Блок №58
 		[
@@ -2735,7 +2860,8 @@ function initMap() {
 					{ lat: 50.627671612753815, lng: 26.27777737242506 },
 				],
 			],
-			'#008000'
+			'ТЦ "Чайка", Кобзарська (частково), Гайдамацька, Червонія 4, 10, 12, 14, 18, 26, 39,' +
+			'Грушевського 1, 2а, 3, 5, 5а, 7, 9, 11, 13, Богоявленська 2',
 		],
 		// №none
 		[
@@ -2959,7 +3085,6 @@ function initMap() {
 					{ lat: 50.61513871139249, lng: 26.263339820394627 },
 					{ lat: 50.61515327475496, lng: 26.264196888508888 },
 				],
-				
 				[
 					{ lat: 50.621927549705305, lng: 26.21713578112823 },
 					{ lat: 50.62342521883474, lng: 26.216589231599233 },
@@ -3254,421 +3379,200 @@ function initMap() {
 					{ lat: 50.62797240699001, lng: 26.27098865825016 },
 				],
 			],
-			'#008000'
+			'Цього блока немає в графіках відключень світла',
 		],
 	];
 
+	// zones specs
 	areas.forEach(function(element) {
 		zones.push(
 			new google.maps.Polygon({
 				paths: element[0],
-				strokeColor: element[1],
+				strokeColor: '#008000',
 				strokeOpacity: 0.8,
 				strokeWeight: 2,
-				fillColor: element[1],
+				fillColor: '#008000',
 				fillOpacity: 0.4,
 			})
 		);
 	});
-	
+
+	// zones time function
+	let tmp = 0;
 	funktionSetColors = function(element){
 		const currentDate = new Date();
 		const hours = currentDate.getHours();
-		if ( hours >= 23 || hours >= 0 && hours < 3 ) {
-			zones[2].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[3].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[4].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[5].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[8].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[10].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[11].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[12].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[15].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[16].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[17].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[18].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[19].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[20].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[22].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[26].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[32].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[33].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[36].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[38].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[39].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[42].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[44].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[45].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[46].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[47].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[49].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[51].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[52].setOptions({fillColor: "red", strokeColor: "red"});
-		} else if ( hours >= 3 && hours < 7) {
-			zones[0].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[1].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[6].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[7].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[9].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[13].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[14].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[21].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[23].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[24].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[25].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[27].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[28].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[29].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[30].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[31].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[34].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[35].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[37].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[40].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[41].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[43].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[48].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[50].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[53].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[54].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[55].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[56].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[57].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[58].setOptions({fillColor: "red", strokeColor: "red"});
-		} else if ( hours >= 7 && hours < 11 ) {
-			zones[2].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[3].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[4].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[5].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[8].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[10].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[11].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[12].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[15].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[16].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[17].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[18].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[19].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[20].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[22].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[26].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[32].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[33].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[36].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[38].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[39].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[42].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[44].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[45].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[46].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[47].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[49].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[51].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[52].setOptions({fillColor: "red", strokeColor: "red"});
-		} else if ( hours >= 11 && hours < 15) {
-			zones[0].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[1].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[6].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[7].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[9].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[13].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[14].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[21].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[23].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[24].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[25].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[27].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[28].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[29].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[30].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[31].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[34].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[35].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[37].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[40].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[41].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[43].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[48].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[50].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[53].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[54].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[55].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[56].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[57].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[58].setOptions({fillColor: "red", strokeColor: "red"});
-		} else if ( hours >= 15 && hours < 19 ) {
-			zones[2].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[3].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[4].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[5].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[8].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[10].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[11].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[12].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[15].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[16].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[17].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[18].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[19].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[20].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[22].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[26].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[32].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[33].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[36].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[38].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[39].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[42].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[44].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[45].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[51].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[52].setOptions({fillColor: "red", strokeColor: "red"});
-		} else if ( hours >= 19 && hours < 23 ) {
-			zones[0].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[1].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[6].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[7].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[9].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[13].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[14].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[21].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[23].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[24].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[25].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[27].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[28].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[29].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[30].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[31].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[34].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[35].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[37].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[40].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[41].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[43].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[46].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[47].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[48].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[49].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[50].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[53].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[54].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[55].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[56].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[57].setOptions({fillColor: "red", strokeColor: "red"});
-			zones[58].setOptions({fillColor: "red", strokeColor: "red"});
-		} else {
-			console.log('Current time detection error');
+		const date = currentDate.getDate();
+		const minutes = currentDate.getMinutes();
+		if ( tmp != 1 && date == setTodayDate && hours >= 15 && hours < 19 ) {
+			zones.forEach(function(element){
+				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
+			});
+			todayfifthLamp.forEach(function(element){
+				zones[element].setOptions({fillColor: "red", strokeColor: "red"});
+			});
+			$('.time-block__mini-flex-box_1,.time-block__mini-flex-box_2,.auto-show-today').addClass('active');
+			$('.time-block__mini-flex-box_2,.time-block__mini-flex-box_3,.time-block__mini-flex-box_4,.time-block__mini-flex-box_5,.time-block__mini-flex-box_6,.time-block__mini-flex-box_7,.time-block__mini-flex-box_8').removeClass('currentTime');
+			$('.time-block__mini-flex-box_1').addClass('currentTime');
+			$('.time-block__flex-box').addClass('active1');
+			$('.time-block__flex-box').addClass('active2');
+			$('.time-block').addClass('padding-for-tomorrow-block');
+			tmp = 1;
+		} else if ( tmp != 2 && date == setTodayDate && hours >= 19 && hours < 23 ) {
+			zones.forEach(function(element){
+				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
+			});
+			todaySixLamp.forEach(function(element){
+				zones[element].setOptions({fillColor: "red", strokeColor: "red"});
+			});
+			$('.time-block__mini-flex-box_2,.auto-show-today').addClass('active');
+			$('.time-block__mini-flex-box_1,.time-block__mini-flex-box_3,.time-block__mini-flex-box_4,.time-block__mini-flex-box_5,.time-block__mini-flex-box_6,.time-block__mini-flex-box_7,.time-block__mini-flex-box_8').removeClass('currentTime');
+			$('.time-block__mini-flex-box_2').addClass('currentTime');
+			$('.time-block__mini-flex-box_1').removeClass('active');
+			$('.time-block__flex-box').addClass('active1');
+			$('.time-block__flex-box').removeClass('active2');
+			$('.time-block').addClass('padding-for-tomorrow-block');
+			tmp = 2;
+		} else if ( tmp != 3 && date == setTodayDate && hours >= 23 || date == setTodayDate + 1 && hours >= 0 && hours < 3 ) {
+			zones.forEach(function(element){
+				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
+			});
+			firstLamp.forEach(function(element){
+				zones[element].setOptions({fillColor: "red", strokeColor: "red"});
+			});
+			$('.time-block__mini-flex-box_1,.time-block__mini-flex-box_2,.auto-show-today').removeClass('active');
+			$('.time-block__mini-flex-box_1,.time-block__mini-flex-box_2,.time-block__mini-flex-box_4,.time-block__mini-flex-box_5,.time-block__mini-flex-box_6,.time-block__mini-flex-box_7,.time-block__mini-flex-box_8').removeClass('currentTime');
+			$('.time-block__mini-flex-box_3').addClass('currentTime');
+			$('.time-block__flex-box').removeClass('active1');
+			$('.time-block__flex-box').removeClass('active2');
+			$('.time-block').removeClass('padding-for-tomorrow-block');
+			tmp = 3;
+
+			// !!!!!
+			// ---- !!!!! ****** "setTodayDate + " add after else if (date == )
+			// !!!!!
+
+		} else if ( tmp != 4 && date == 1 && hours >= 3 && hours < 7) {
+			zones.forEach(function(element){
+				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
+			});
+			secondLamt.forEach(function(element){
+				zones[element].setOptions({fillColor: "red", strokeColor: "red"});
+			});
+			$('.time-block__mini-flex-box_1,.time-block__mini-flex-box_2,.auto-show-today').removeClass('active');
+			$('.time-block__mini-flex-box_1,.time-block__mini-flex-box_2,.time-block__mini-flex-box_3,.time-block__mini-flex-box_5,.time-block__mini-flex-box_6,.time-block__mini-flex-box_7,.time-block__mini-flex-box_8').removeClass('currentTime');
+			$('.time-block__mini-flex-box_4').addClass('currentTime');
+			$('.time-block__flex-box').removeClass('active1');
+			$('.time-block__flex-box').removeClass('active2');
+			$('.time-block').removeClass('padding-for-tomorrow-block');
+			tmp = 4;
+		} else if ( tmp != 5 && date == 1 && hours >= 7 && hours < 11 ) {
+			zones.forEach(function(element){
+				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
+			});
+			thirtLamt.forEach(function(element){
+				zones[element].setOptions({fillColor: "red", strokeColor: "red"});
+			});
+			$('.time-block__mini-flex-box_1,.time-block__mini-flex-box_2,.auto-show-today').removeClass('active');
+			$('.time-block__mini-flex-box_1,.time-block__mini-flex-box_2,.time-block__mini-flex-box_3,.time-block__mini-flex-box_4,.time-block__mini-flex-box_6,.time-block__mini-flex-box_7,.time-block__mini-flex-box_8').removeClass('currentTime');
+			$('.time-block__mini-flex-box_5').addClass('currentTime');
+			$('.time-block__flex-box').removeClass('active1');
+			$('.time-block__flex-box').removeClass('active2');
+			$('.time-block').removeClass('padding-for-tomorrow-block');
+			tmp = 5;
+		} else if ( tmp != 6 && date == 1 && hours >= 11 && hours < 15 ) {
+			zones.forEach(function(element){
+				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
+			});
+			forthLamt.forEach(function(element){
+				zones[element].setOptions({fillColor: "red", strokeColor: "red"});
+			});
+			$('.time-block__mini-flex-box_1,.time-block__mini-flex-box_2,.auto-show-today').removeClass('active');
+			$('.time-block__mini-flex-box_1,.time-block__mini-flex-box_2,.time-block__mini-flex-box_3,.time-block__mini-flex-box_4,.time-block__mini-flex-box_5,.time-block__mini-flex-box_7,.time-block__mini-flex-box_8').removeClass('currentTime');
+			$('.time-block__mini-flex-box_6').addClass('currentTime');
+			$('.auto-show-today').addClass('active');
+			$('.time-block__flex-box').removeClass('active1');
+			$('.time-block__flex-box').removeClass('active2');
+			$('.time-block').removeClass('padding-for-tomorrow-block');
+			tmp = 6;
+		} else if ( tmp != 7 && date == 1 && hours >= 15 && hours < 19 ) {
+			zones.forEach(function(element){
+				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
+			});
+			fifthLamp.forEach(function(element){
+				zones[element].setOptions({fillColor: "red", strokeColor: "red"});
+			});
+			$('.time-block__mini-flex-box_1,.time-block__mini-flex-box_2,.auto-show-today').removeClass('active');
+			$('.time-block__mini-flex-box_1,.time-block__mini-flex-box_2,.time-block__mini-flex-box_3,.time-block__mini-flex-box_4,.time-block__mini-flex-box_5,.time-block__mini-flex-box_6,.time-block__mini-flex-box_8').removeClass('currentTime');
+			$('.time-block__mini-flex-box_7').addClass('currentTime');
+			$('.time-block__flex-box').removeClass('active1');
+			$('.time-block__flex-box').removeClass('active2');
+			$('.time-block').removeClass('padding-for-tomorrow-block');
+			tmp = 7;
+		} else if ( tmp != 8 && date == 1 && hours >= 19 && hours < 23 ) {
+			zones.forEach(function(element){
+				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
+			});
+			sixLamp.forEach(function(element){
+				zones[element].setOptions({fillColor: "red", strokeColor: "red"});
+			});
+			$('.time-block__mini-flex-box_1,.time-block__mini-flex-box_2,.auto-show-today').removeClass('active');
+			$('.time-block__mini-flex-box_1,.time-block__mini-flex-box_2,.time-block__mini-flex-box_3,.time-block__mini-flex-box_4,.time-block__mini-flex-box_5,.time-block__mini-flex-box_6,.time-block__mini-flex-box_7').removeClass('currentTime');
+			$('.time-block__mini-flex-box_8').addClass('currentTime');
+			$('.time-block__flex-box').removeClass('active1');
+			$('.time-block__flex-box').removeClass('active2');
+			$('.time-block').removeClass('padding-for-tomorrow-block');
+			tmp = 8;
 		}
 	}
-	functionBgColor = function(element, index){
-		element.setOptions({fillColor: '#008000', strokeColor: '#008000',});
-	}
-	areas.forEach(funktionSetColors);
-	
-	zones.forEach(function(element, index){
+	funktionSetColors();
+	ifsColorOnZones = function(){areas.forEach(funktionSetColors);};
+	setInterval(funktionSetColors, 10000 );
+	setInterval(ifsColorOnZones, 10000 );
+
+	// завантажувати файл json з перемінною версії через ajax, якщо версія помінялася то завантажити другий json з графіками і вивести їх через наявні функції на карту та в інфоблок
+
+	zones.forEach(function(element, i){
 		element.setMap(map);
 		element.addListener("click", () => {
 			$('.map-light-hint').addClass('none');
-			$('.header__update-time').addClass('none');
-			$('.time-block').removeClass('active hide');
-			$('.time-block_' + index).toggleClass('active');
-			zones.forEach(functionBgColor);
-			zones.forEach(funktionSetColors);
+			$('.time-block').addClass('active');
+			$('.time-block__title-block-num').text(i);
+			$('.time-block__paragraf-detail-info').text(areas[i][1]);
+			tmp = 0;
+			funktionSetColors();
 			element.setOptions({fillColor: "rgb(47,47,162)", strokeColor: "rgb(47,47,162)"});
+			$(".time-block__mini-flex-box_1,.time-block__mini-flex-box_2,.time-block__mini-flex-box_3,.time-block__mini-flex-box_4,.time-block__mini-flex-box_5,.time-block__mini-flex-box_6,.time-block__mini-flex-box_7,.time-block__mini-flex-box_8").removeClass('off');
+			if (todayfifthLamp.includes(i)) {
+				$(".time-block__mini-flex-box_1").addClass('off');
+			} 
+			if (todaySixLamp.includes(i)) {
+				$(".time-block__mini-flex-box_2").addClass('off');
+			} 
+			if (firstLamp.includes(i)) {
+				$(".time-block__mini-flex-box_3").addClass('off');
+			} 
+			if (secondLamt.includes(i)) {
+				$(".time-block__mini-flex-box_4").addClass('off');
+			} 
+			if (thirtLamt.includes(i)) {
+				$(".time-block__mini-flex-box_5").addClass('off');
+			} 
+			if (forthLamt.includes(i)) {
+				$(".time-block__mini-flex-box_6").addClass('off');
+			} 
+			if (fifthLamp.includes(i)) {
+				$(".time-block__mini-flex-box_7").addClass('off');
+			} 
+			if (sixLamp.includes(i)) {
+				$(".time-block__mini-flex-box_8").addClass('off');
+			}
 		});
 	});
 	$('.time-block__hide').on("click", () => {
-		zones.forEach(functionBgColor);
-		areas.forEach(funktionSetColors);
+		tmp = 0;
+		funktionSetColors();
 	});
-
-	// Лампочка №1
-	$('.time-block__first-lamp_2,'+ 
-		'.time-block__first-lamp_3,'+ 
-		'.time-block__first-lamp_4,'+ 
-		'.time-block__first-lamp_5,'+ 
-		'.time-block__first-lamp_8,'+ 
-		'.time-block__first-lamp_10,'+ 
-		'.time-block__first-lamp_11,'+ 
-		'.time-block__first-lamp_12,'+ 
-		'.time-block__first-lamp_15,'+ 
-		'.time-block__first-lamp_16,'+ 
-		'.time-block__first-lamp_17,'+ 
-		'.time-block__first-lamp_18,'+ 
-		'.time-block__first-lamp_19,'+ 
-		'.time-block__first-lamp_20,'+ 
-		'.time-block__first-lamp_22,'+ 
-		'.time-block__first-lamp_26,'+ 
-		'.time-block__first-lamp_32,'+ 
-		'.time-block__first-lamp_33,'+ 
-		'.time-block__first-lamp_36,'+ 
-		'.time-block__first-lamp_38,'+ 
-		'.time-block__first-lamp_39,'+ 
-		'.time-block__first-lamp_42,'+ 
-		'.time-block__first-lamp_44,'+ 
-		'.time-block__first-lamp_45,'+ 
-		'.time-block__first-lamp_46,'+ 
-		'.time-block__first-lamp_47,'+ 
-		'.time-block__first-lamp_49,'+ 
-		'.time-block__first-lamp_51,'+ 
-		'.time-block__first-lamp_52').addClass('off');
-	// Лампочка №2
-	$('.time-block__second-lamp_0,'+
-		'.time-block__second-lamp_1,'+
-		'.time-block__second-lamp_6,'+
-		'.time-block__second-lamp_7,'+
-		'.time-block__second-lamp_9,'+
-		'.time-block__second-lamp_13,'+
-		'.time-block__second-lamp_14,'+
-		'.time-block__second-lamp_21,'+
-		'.time-block__second-lamp_23,'+
-		'.time-block__second-lamp_24,'+
-		'.time-block__second-lamp_25,'+
-		'.time-block__second-lamp_27,'+
-		'.time-block__second-lamp_28,'+ 
-		'.time-block__second-lamp_29,'+
-		'.time-block__second-lamp_30,'+
-		'.time-block__second-lamp_31,'+
-		'.time-block__second-lamp_34,'+
-		'.time-block__second-lamp_35,'+
-		'.time-block__second-lamp_37,'+
-		'.time-block__second-lamp_40,'+
-		'.time-block__second-lamp_41,'+
-		'.time-block__second-lamp_43,'+
-		'.time-block__second-lamp_48,'+
-		'.time-block__second-lamp_50,'+
-		'.time-block__second-lamp_53,'+
-		'.time-block__second-lamp_54,'+
-		'.time-block__second-lamp_55,'+
-		'.time-block__second-lamp_56,'+
-		'.time-block__second-lamp_57,'+
-		'.time-block__second-lamp_58').addClass('off');
-	// Лампочка №3
-	$('.time-block__third-lamp_2,'+
-		'.time-block__third-lamp_3,'+
-		'.time-block__third-lamp_4,'+
-		'.time-block__third-lamp_5,'+
-		'.time-block__third-lamp_8,'+
-		'.time-block__third-lamp_10,'+
-		'.time-block__third-lamp_11,'+
-		'.time-block__third-lamp_12,'+
-		'.time-block__third-lamp_15,'+
-		'.time-block__third-lamp_16,'+
-		'.time-block__third-lamp_17,'+
-		'.time-block__third-lamp_18,'+
-		'.time-block__third-lamp_19,'+
-		'.time-block__third-lamp_20,'+
-		'.time-block__third-lamp_22,'+
-		'.time-block__third-lamp_26,'+
-		'.time-block__third-lamp_32,'+
-		'.time-block__third-lamp_33,'+
-		'.time-block__third-lamp_36,'+
-		'.time-block__third-lamp_38,'+
-		'.time-block__third-lamp_39,'+
-		'.time-block__third-lamp_42,'+
-		'.time-block__third-lamp_44,'+
-		'.time-block__third-lamp_45,'+
-		'.time-block__third-lamp_46,'+
-		'.time-block__third-lamp_47,'+
-		'.time-block__third-lamp_49,'+
-		'.time-block__third-lamp_51,'+
-		'.time-block__third-lamp_52').addClass('off');
-	// Лампочка №4
-	$(
-	'.time-block__fourth-lamp_0,'+
-	'.time-block__fourth-lamp_1,'+
-	'.time-block__fourth-lamp_6,'+
-	'.time-block__fourth-lamp_7,'+
-	'.time-block__fourth-lamp_9,'+
-	'.time-block__fourth-lamp_13,'+
-	'.time-block__fourth-lamp_14,'+
-	'.time-block__fourth-lamp_21,'+
-	'.time-block__fourth-lamp_23,'+
-	'.time-block__fourth-lamp_24,'+
-	'.time-block__fourth-lamp_25,'+
-	'.time-block__fourth-lamp_27,'+
-	'.time-block__fourth-lamp_28,'+
-	'.time-block__fourth-lamp_29,'+
-	'.time-block__fourth-lamp_30,'+
-	'.time-block__fourth-lamp_31,'+
-	'.time-block__fourth-lamp_34,'+
-	'.time-block__fourth-lamp_35,'+
-	'.time-block__fourth-lamp_37,'+
-	'.time-block__fourth-lamp_40,'+
-	'.time-block__fourth-lamp_41,'+
-	'.time-block__fourth-lamp_43,'+
-	'.time-block__fourth-lamp_48,'+
-	'.time-block__fourth-lamp_50,'+
-	'.time-block__fourth-lamp_53,'+
-	'.time-block__fourth-lamp_54,'+
-	'.time-block__fourth-lamp_55,'+
-	'.time-block__fourth-lamp_56,'+
-	'.time-block__fourth-lamp_57,'+
-	'.time-block__fourth-lamp_58').addClass('off');
-	// Лампочка №5
-	$(
-	'.time-block__fifth-lamp_2,'+
-	'.time-block__fifth-lamp_3,'+
-	'.time-block__fifth-lamp_4,'+
-	'.time-block__fifth-lamp_5,'+
-	'.time-block__fifth-lamp_8,'+
-	'.time-block__fifth-lamp_10,'+
-	'.time-block__fifth-lamp_11,'+
-	'.time-block__fifth-lamp_12,'+
-	'.time-block__fifth-lamp_15,'+
-	'.time-block__fifth-lamp_16,'+
-	'.time-block__fifth-lamp_17,'+
-	'.time-block__fifth-lamp_18,'+
-	'.time-block__fifth-lamp_19,'+
-	'.time-block__fifth-lamp_20,'+
-	'.time-block__fifth-lamp_22,'+
-	'.time-block__fifth-lamp_26,'+
-	'.time-block__fifth-lamp_32,'+
-	'.time-block__fifth-lamp_33,'+
-	'.time-block__fifth-lamp_36,'+
-	'.time-block__fifth-lamp_38,'+
-	'.time-block__fifth-lamp_39,'+
-	'.time-block__fifth-lamp_42,'+
-	'.time-block__fifth-lamp_44,'+
-	'.time-block__fifth-lamp_45,'+
-	'.time-block__fifth-lamp_51,'+
-	'.time-block__fifth-lamp_52').addClass('off');
-	// Лампочка №6
-	$(
-	'.time-block__last-lamp_0,'+
-	'.time-block__last-lamp_1,'+
-	'.time-block__last-lamp_6,'+
-	'.time-block__last-lamp_7,'+
-	'.time-block__last-lamp_9,'+
-	'.time-block__last-lamp_13,'+
-	'.time-block__last-lamp_14,'+
-	'.time-block__last-lamp_21,'+
-	'.time-block__last-lamp_23,'+
-	'.time-block__last-lamp_24,'+
-	'.time-block__last-lamp_25,'+
-	'.time-block__last-lamp_27,'+
-	'.time-block__last-lamp_28,'+
-	'.time-block__last-lamp_29,'+
-	'.time-block__last-lamp_30,'+
-	'.time-block__last-lamp_31,'+
-	'.time-block__last-lamp_34,'+
-	'.time-block__last-lamp_35,'+
-	'.time-block__last-lamp_37,'+
-	'.time-block__last-lamp_40,'+
-	'.time-block__last-lamp_41,'+
-	'.time-block__last-lamp_43,'+
-	'.time-block__last-lamp_46,'+
-	'.time-block__last-lamp_47,'+
-	'.time-block__last-lamp_48,'+
-	'.time-block__last-lamp_49,'+
-	'.time-block__last-lamp_50,'+
-	'.time-block__last-lamp_53,'+
-	'.time-block__last-lamp_54,'+
-	'.time-block__last-lamp_55,'+
-	'.time-block__last-lamp_56,'+
-	'.time-block__last-lamp_57,'+
-	'.time-block__last-lamp_58').addClass('off');
 
 	// Пункти незламності
 	const positions = [
@@ -4423,7 +4327,7 @@ function initMap() {
 		$('.info__map-punkts').removeClass('none');
 	} 
 	else {
-		console.log('Error link parameter');
+		console.log('None link parameter');
 		hidePunkts();
 		hideShelters();
 		showZones();
@@ -4552,6 +4456,7 @@ function initMap() {
       handleLocationError(false, infoWindow2, map.getCenter());
     }
   });
+
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
@@ -4566,4 +4471,4 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 }
 window.initMap = initMap;
 
-// прописати шість if else для кожного часового проміжку, які блоки в нього входять
+//розібратися, якою функцією з апі можна міняти кольори блоків після функції initMap і підставити в іфи замість текущої функції
