@@ -3452,7 +3452,7 @@ function initMap() {
 			// ---- !!!!! ****** "setTodayDate + " add after else if (date == )
 			// !!!!!
 
-		} else if ( tmp != 4 && date == 1 && hours >= 3 && hours < 7) {
+		} else if ( tmp != 4 && date == setTodayDate + 1 && hours >= 3 && hours < 7) {
 			zones.forEach(function(element){
 				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
 			});
@@ -3466,7 +3466,7 @@ function initMap() {
 			$('.time-block__flex-box').removeClass('active2');
 			$('.time-block').removeClass('padding-for-tomorrow-block');
 			tmp = 4;
-		} else if ( tmp != 5 && date == 1 && hours >= 7 && hours < 11 ) {
+		} else if ( tmp != 5 && date == setTodayDate + 1 && hours >= 7 && hours < 11 ) {
 			zones.forEach(function(element){
 				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
 			});
@@ -3480,7 +3480,7 @@ function initMap() {
 			$('.time-block__flex-box').removeClass('active2');
 			$('.time-block').removeClass('padding-for-tomorrow-block');
 			tmp = 5;
-		} else if ( tmp != 6 && date == 1 && hours >= 11 && hours < 15 ) {
+		} else if ( tmp != 6 && date == setTodayDate + 1 && hours >= 11 && hours < 15 ) {
 			zones.forEach(function(element){
 				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
 			});
@@ -3495,7 +3495,7 @@ function initMap() {
 			$('.time-block__flex-box').removeClass('active2');
 			$('.time-block').removeClass('padding-for-tomorrow-block');
 			tmp = 6;
-		} else if ( tmp != 7 && date == 1 && hours >= 15 && hours < 19 ) {
+		} else if ( tmp != 7 && date == setTodayDate + 1 && hours >= 15 && hours < 19 ) {
 			zones.forEach(function(element){
 				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
 			});
@@ -3509,7 +3509,7 @@ function initMap() {
 			$('.time-block__flex-box').removeClass('active2');
 			$('.time-block').removeClass('padding-for-tomorrow-block');
 			tmp = 7;
-		} else if ( tmp != 8 && date == 1 && hours >= 19 && hours < 23 ) {
+		} else if ( tmp != 8 && date == setTodayDate + 1 && hours >= 19 && hours < 23 ) {
 			zones.forEach(function(element){
 				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
 			});
