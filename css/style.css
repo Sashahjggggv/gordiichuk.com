@@ -266,6 +266,9 @@ svg.btn-icon {
 #map {
   height: 100%;
 }
+#map > div:nth-child(2) {
+  display: none;
+}
 html,
 body {
   height: 100%;
