@@ -3403,7 +3403,6 @@ function initMap() {
 		const currentDate = new Date();
 		const hours = currentDate.getHours();
 		const date = currentDate.getDate();
-		const minutes = currentDate.getMinutes();
 		if ( tmp != 1 && date == setTodayDate && hours >= 15 && hours < 19 ) {
 			zones.forEach(function(element){
 				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
@@ -3447,11 +3446,6 @@ function initMap() {
 			$('.time-block__flex-box').removeClass('active2');
 			$('.time-block').removeClass('padding-for-tomorrow-block');
 			tmp = 3;
-
-			// !!!!!
-			// ---- !!!!! ****** "setTodayDate + " add after else if (date == )
-			// !!!!!
-
 		} else if ( tmp != 4 && date == setTodayDate + 1 && hours >= 3 && hours < 7) {
 			zones.forEach(function(element){
 				element.setOptions({fillColor: "#008000", strokeColor: "#008000"});
@@ -3531,7 +3525,7 @@ function initMap() {
 	setInterval(ifsColorOnZones, 10000 );
 
 	// завантажувати файл json з перемінною версії через ajax, якщо версія помінялася то завантажити другий json з графіками і вивести їх через наявні функції на карту та в інфоблок
-
+	// Автоматично додаються лампочки з масивів графіків
 	zones.forEach(function(element, i){
 		element.setMap(map);
 		element.addListener("click", () => {
