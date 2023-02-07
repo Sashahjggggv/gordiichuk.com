@@ -278,7 +278,7 @@
 				return false;
 			}
 		});
-		const isEmpty = str => !str.trim().length;
+		const isEmpty = str => !str.trim().length
 		document.getElementById("pac-input").addEventListener("input", function() {
 			if( isEmpty(this.value) ) {
 				$('.search-form__close,.search-form__cancel-img_hide').removeClass('none');
