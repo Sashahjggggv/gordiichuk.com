@@ -3608,7 +3608,11 @@ function initMap() {
 					funktionSetColors(data);
 					autoAddLamp(data);
 				}
-				setInterval(autoChengeColor, 10000);
+				function startInterval() {intervalAutoChenge = setInterval(autoChengeColor, 10000)}
+				startInterval();
+				function stopInterval() {clearInterval(intervalAutoChenge)}
+				$('.header__map-shelters,.header__punkty-nezlamnosty').click(function(){stopInterval()})
+				$('.header__map-light').click(function(){startInterval()})
 				$('.time-block__hide').on("click", () => {
 					tmp = 0;
 					funktionSetColors(data);
