@@ -270,25 +270,8 @@
 		</div>
 	</div>
 	<div id="map" class="map"></div>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 	<script>
-		const setMonths = '02';
-		const setTodayDate = 06;
-		const setTimeNewRelease = '19:08';
-		const todayfifthLamp = [1,7,9,13,16,18,21,23,24,25,27,28,29,30,31,34,35,37,40,41,43,50,53,54,55,56,57,58];
-		const todaySixLamp = [0,2,3,4,5,6,8,10,11,12,14,15,17,19,20,22,26,32,33,36,38,39,42,44,45,46,47,49,51,52];
-		const firstLamp = [1,7,9,13,16,18,21,23,24,25,27,28,29,30,31,34,35,37,40,41,43,46,47,48,49,50,53,54,55,56,57,58];
-		const secondLamt = [0,2,3,4,5,6,8,10,11,12,14,15,17,19,20,22,26,32,33,36,38,39,42,44,45,51,52];
-		const thirtLamt = [1,7,9,13,16,18,21,23,24,25,27,28,29,30,31,34,35,37,40,41,43,46,47,48,49,50,53,54,55,56,57,58];
-		const forthLamt = [0,2,3,4,5,6,8,10,11,12,14,15,17,19,20,22,26,32,33,36,38,39,42,44,45,51,52];
-		const fifthLamp = [1,7,9,13,16,18,21,23,24,25,27,28,29,30,31,34,35,37,40,41,43,48,50,53,54,55,56,57,58];
-		const sixLamp = [0,2,3,4,5,6,8,10,11,12,14,15,17,19,20,22,26,32,33,36,38,39,42,44,45,46,47,49,51,52];
-		
-		$('.month').text(setMonths);
-		$('.date-today').text(setTodayDate);
-		$('.date-tomorrow').text(setTodayDate + 1);
-		$('.time-release-grafik').text(setTimeNewRelease);
-
 		$('form').bind("keypress", function(e) {
 			if (e.keyCode == 13) {
 				e.preventDefault();
