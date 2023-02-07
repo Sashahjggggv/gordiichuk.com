@@ -3615,7 +3615,7 @@ function initMap() {
 				$('.header__map-light').click(function(){startInterval()})
 				$('.time-block__hide').on("click", () => {
 					tmp = 0;
-					funktionSetColors(data);
+					funktionSetColors(data)
 				});
 			}
 		});
