@@ -3639,6 +3639,17 @@ function initMap() {
 	setInterval(takeNewFileVersion, 10000);
 
 	// Пункти незламності
+	// const punktuNezlamnosty = [
+	// 	{
+	// 		{ lat: 50.64264244334985, lng: 26.194509184681348 };
+	// 	};
+	// 	{
+	// 		{ lat: 50.62272157243296, lng: 26.24498472886133 };
+	// 	};
+	// 	{
+	// 		{ lat: 50.63070886722709, lng: 26.25228172700857 };
+	// 	};
+	// ];
 	const positions = [
 		{ lat: 50.64264244334985, lng: 26.194509184681348 },
 		{ lat: 50.62272157243296, lng: 26.24498472886133 },
@@ -3749,9 +3760,7 @@ function initMap() {
     return marker1;
   });
 
-
 	// Shelters
-
 	const nuclearWeapon = 'img/radioactive.svg'
 	const bombsWeapon = 'img/rocket-takeoff.svg'
 	
