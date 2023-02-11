@@ -3725,17 +3725,17 @@ function initMap() {
   });
 
 	const punkts = positions.map((data, i) => {
-    const marker1 = new google.maps.Marker({
-    	data.coordinates,
+		const marker1 = new google.maps.Marker({
+			position: data.coordinates,
 			title: data.title,
-    });
-	
-    // markers can only be keyboard focusable when they have click listeners
-    // open info window when marker is clicked
-			marker1.addListener("click", () => {
-				infoWindow1.setContent(info[i]);
-				infoWindow1.open(map, marker1);
-			});
+		});
+		
+		// markers can only be keyboard focusable when they have click listeners
+		// open info window when marker is clicked
+		marker1.addListener("click", () => {
+			infoWindow1.setContent(info[i]);
+			infoWindow1.open(map, marker1);
+		});
 
     return marker1;
   });
